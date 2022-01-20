@@ -1,0 +1,49 @@
+.acorddion-title {
+	width: 100%;
+	font-size: var(--font-size-weeny);
+	line-height: var(--line-height-medium);
+	font-family: var(--font-family-02);
+	color: var(--surface-color-11);
+	border-radius: 4px;
+}
+
+/* 
+	FIXME
+	Deve haver outra abordagem - pois o P depende do usuário, se ele colocar
+	h1,h2,etc a estilização não irá funcionar
+*/
+.acorddion-title p {
+	width: 100%;
+}
+
+.acorddion .acorddion-title.variant--basic {
+	background-color: var(--surface-color-10);
+	color: var(--surface-color-06);
+}
+
+.acorddion .acorddion-title.variant--basic.active {
+	background-color: var(--color-primary-01);
+	color: var(--surface-color-11);
+}
+
+.acorddion .acorddion-title.size--tiny {
+	width: 100%;
+
+	padding-top: var(--spacing-xxxsm);
+	padding-right: var(--spacing-xxsm);
+	padding-bottom: var(--spacing-xxxsm);
+	padding-left: var(--spacing-xxsm);
+
+	display: flex;
+}
+
+.acorddion .acorddion-title.size--normal {
+	width: 100%;
+	
+	padding-top: var(--spacing-xxsm);
+	padding-right: var(--spacing-sm);
+	padding-bottom: var(--spacing-xxsm);
+	padding-left: var(--spacing-sm);
+
+	display: flex;
+}
