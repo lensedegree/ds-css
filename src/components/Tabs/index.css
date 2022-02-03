@@ -1,0 +1,33 @@
+@import url('./variant.css');
+
+.tabs * {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.tabs {
+	font-family: var(--font-family-02);
+	font-size: var(--font-size-weeny);
+	line-height: var(--line-height-medium);
+}
+
+.tabs > .tabs-header {
+	display: flex;
+}
+
+.tabs > .tabs-header > div {
+	width: 100%;
+	padding-top: var(--spacing-tiny);
+	padding-right: var(--spacing-xxsm);
+	padding-bottom: var(--spacing-xxxsm);
+	padding-left: var(--spacing-xxsm);
+	cursor: pointer;
+}
+
+.tabs > .tabs-content {
+	padding-top: var(--spacing-xxsm);
+	padding-right: var(--spacing-xxsm);
+	padding-bottom: var(--spacing-sm);
+	padding-left: var(--spacing-xxsm);
+}

@@ -11,7 +11,11 @@ export default {
     icon: {
       control: { type: 'boolean' },
 			defaultValue: 'true',
-    }
+    },
+		content: {
+			control: { type: 'text' },
+			defaultValue: 'Button'
+		},
   },
   decorators: [(story) => `
     <div style="
@@ -19,17 +23,15 @@ export default {
       flex-direction: column;
     
       align-items: flex-start;
-    
-      padding: 30px;
       
-      gap: 30px;
+      gap: 15px;
     ">
       ${story()}
     </div>
   `]
 }
 
-export const Sizes = ({ variant, icon }) => {
+export const Sizes = ({ variant, icon, content }) => {
 	if (icon) {
 		return `
 			<button class="
@@ -37,11 +39,11 @@ export const Sizes = ({ variant, icon }) => {
 				variant--${variant ?? 'primary'}
 				size--large
 			">
-				Download
+				${content}
 				<span class="material-icons-outlined md-18">
           file_download
           <style>
-            .material-icons.md-18 {
+            .material-icons-outlined.md-18 {
               font-size: 18px;
             }
           </style>
@@ -53,11 +55,11 @@ export const Sizes = ({ variant, icon }) => {
 				variant--${variant ?? 'primary'}
 				size--medium
 			">
-				Download
+				${content}
 				<span class="material-icons-outlined md-18">
           file_download
           <style>
-            .material-icons.md-18 {
+            .material-icons-outlined.md-18 {
               font-size: 18px;
             }
           </style>
@@ -69,11 +71,11 @@ export const Sizes = ({ variant, icon }) => {
 				variant--${variant ?? 'primary'}
 				size--small
 			">
-				Download
+				${content}
 				<span class="material-icons-outlined md-18">
           file_download
           <style>
-            .material-icons.md-18 {
+            .material-icons-outlined.md-18 {
               font-size: 18px;
             }
           </style>
@@ -87,18 +89,18 @@ export const Sizes = ({ variant, icon }) => {
 			button
 			variant--${variant ?? 'primary'}
 			size--large
-		">Button</button>
+		">${content}</button>
 
 		<button class="
 			button
 			variant--${variant ?? 'primary'}
 			size--medium
-		">Button</button>
+		">${content}</button>
 
 		<button class="
 			button
 			variant--${variant ?? 'primary'}
 			size--small
-		">Button</button>
+		">${content}</button>
 	`
 }

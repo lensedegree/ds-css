@@ -1,0 +1,31 @@
+.checkbox.variant--basic input[type="checkbox"] {
+	all: inherit;
+	content: url('../../assets/check_box_outline_blank_black_24dp.svg');
+	filter: 
+		invert(37%) 
+		sepia(77%) 
+		saturate(2074%) 
+		hue-rotate(213deg) 
+		brightness(99%) 
+		contrast(103%);
+}
+
+.checkbox.variant--basic input[type="checkbox"]:checked {
+	content: url('../../assets/check_box_black_24dp.svg');
+	filter: 
+		invert(37%) 
+		sepia(77%) 
+		saturate(2074%) 
+		hue-rotate(213deg) 
+		brightness(99%) 
+		contrast(103%);
+}
+
+.checkbox.variant--rounded input[type="checkbox"] {
+	all: inherit;
+	content: url('../../assets/radio_button_unchecked_black_24dp.svg');
+}
+
+.checkbox.variant--rounded input[type="checkbox"]:checked {
+	content: url('../../assets/check_circle_black_24dp.svg');
+}

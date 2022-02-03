@@ -1,0 +1,10 @@
+.alignment--vertical {
+	display: flex;
+	flex-direction: column;
+	gap: var(--spacing-mini);
+}
+
+.alignment--horizontal {
+	display: flex;
+	gap: 18px; /* FIXME: Espaçamento inexistente no DS */
+}

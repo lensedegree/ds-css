@@ -1,0 +1,47 @@
+@import url('./variant.css');
+@import url('./message.css');
+
+.input * {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.input {
+	display: flex;
+	align-items: center;
+	padding-top: var(--spacing-tiny);
+	padding-right: var(--spacing-xxsm);
+	padding-bottom: var(--spacing-xxxsm);
+	padding-left: var(--spacing-xxsm);
+	background-color: var(--surface-color-10);
+	border: 1px solid var(--surface-color-10);
+	border-radius: 4px;
+}
+
+.input.disable {
+	cursor: inherit;
+	background-color: var(--surface-color-09);
+	/* FIXME: Quando desabilitado, configurar o cursor para not-allowed? */
+}
+
+.input.error {
+	border: 1px solid var(--color-secundary-03);
+}
+
+.input:not(.error):not(.disable):focus-within {
+	border: 1px solid var(--color-primary-01);
+}
+
+.input > input {
+	all: unset;
+	width: 100%;
+	font-family: var(--font-family-02);
+	font-size: var(--font-size-weeny);
+	line-height: var(--line-height-medium);
+	color: var(--surface-color-05);
+}
+
+.input.disable > input {
+	color: var(--surface-color-07);
+}

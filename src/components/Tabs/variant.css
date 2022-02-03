@@ -1,0 +1,38 @@
+.tabs.variant--default > .tabs-header {
+	display: flex;
+	gap: var(--spacing-zee);
+}
+
+.tabs.variant--default > .tabs-header > div {
+	color: var(--surface-color-05);
+	border-bottom: 2px solid var(--surface-color-08);
+}
+/* FIXME: O que fazer com o hover da aba? */
+
+.tabs.variant--default > .tabs-header > div.active {
+	color: var(--color-primary-01);
+	border-bottom: 2px solid var(--color-primary-01);
+}
+
+.tabs.variant--default > .tabs-content {
+	color: var(--surface-color-03);
+}
+
+.tabs.variant--container > .tabs-header > div {
+	background: var(--surface-color-10);
+	color: var(--surface-color-07);
+}
+/* FIXME: O que fazer com o hover da aba? */
+
+.tabs.variant--container > .tabs-header > div.active {
+	background: var(--color-primary-01);
+	color: var(--surface-color-11);
+}
+
+.tabs.variant--container > .tabs-header > div:not(.active) + div:not(.active) {
+	border-left: 2px solid var(--surface-color-08);
+}
+
+.tabs.variant--container > .tabs-content {
+	color: var(--surface-color-05);
+}

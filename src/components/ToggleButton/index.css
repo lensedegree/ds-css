@@ -1,0 +1,41 @@
+.toggle-button * {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.toggle-button {
+	display: flex;
+	
+	width: 40px;
+	height: 20px;
+
+	border-radius: 10px;
+
+	cursor: pointer;
+}
+
+.toggle-button.deactive {
+	background-color: var(--surface-color-09);
+}
+
+.toggle-button.active {
+	justify-content: flex-end;
+	background-color: var(--color-primary-01);
+}
+
+.toggle-button.deactive .toggle {
+	width: 20px;
+	height: 20px;
+	border: 1px solid var(--surface-color-09);
+	background-color: var(--surface-color-11);
+	border-radius: 9999px;
+}
+
+.toggle-button.active .toggle {
+	width: 20px;
+	height: 20px;
+	border: 1px solid var(--color-primary-01);
+	background-color: var(--surface-color-11);
+	border-radius: 9999px;
+}

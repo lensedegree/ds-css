@@ -1,0 +1,20 @@
+@import url('./progress-variant.css');
+@import url('./step-variant.css');
+
+.progress * {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.progress > .step {
+	display: inline-flex;
+	align-items: center;
+	padding-top: 15px; /* FIXME: Espaçamento inexistente no DS */
+	padding-right: var(--spacing-xxxsm);
+	padding-bottom: 18px; /* FIXME: Espaçamento inexistente no DS */
+	padding-left: var(--spacing-xxxsm);
+	font-family: var(--font-family-02);
+	font-size: var(--font-size-mini);
+	line-height: var(--line-height-medium);
+}

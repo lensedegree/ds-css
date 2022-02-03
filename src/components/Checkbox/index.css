@@ -1,0 +1,22 @@
+@import url('./alignment.css');
+@import url('./size.css');
+@import url('./variant.css');
+
+.checkbox * {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.checkbox {
+	color: var(--surface-color-02);
+	font-family: var(--font-family-02);
+}
+
+.checkbox > span {
+	display: flex;
+	align-items: center;
+	gap: var(--spacing-mini);
+}
+
+/* TODO: Checkbox aninhado (parent checkbox) */

@@ -1,0 +1,46 @@
+@import url('./variant.css');
+@import url('./format.css');
+@import url('./reward.css');
+
+.toast * {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.toast {
+	display: flex;
+	flex-direction: column;
+	padding-top: var(--spacing-xxxsm);
+	padding-right: var(--spacing-xxxsm);
+	padding-bottom: var(--spacing-xxxsm);
+	padding-left: var(--spacing-xxxsm);
+	font-family: var(--font-family-02);
+	font-size: var(--font-size-weeny);
+	line-height: var(--line-height-medium);
+	border-radius: 4px;
+}
+
+.toast > span:first-child > span:first-child {
+	width: 32px;
+	height: 32px;
+	margin-right: var(--spacing-xxxsm);
+}
+
+.toast > span:first-child > span:last-child > span {
+	background-color: transparent;
+	border: none;
+	font-family: var(--font-family-02);
+	font-size: var(--font-size-weeny);
+	line-height: var(--line-height-medium);
+	font-weight: 500; /* FIXME: Medium não existe, porém ficou mais fiel
+										com 400 (normal) */
+	cursor: pointer;
+}
+
+.toast > span:last-child > hr {
+	border: 0;
+	background-color: transparent;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}

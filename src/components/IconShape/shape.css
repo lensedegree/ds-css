@@ -1,0 +1,7 @@
+.icon-shape.shape--square {
+	border-radius: 4px;
+}
+
+.icon-shape.shape--circle {
+	border-radius: 9999px;
+}

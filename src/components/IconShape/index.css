@@ -1,0 +1,13 @@
+@import url('./shape.css');
+@import url('./size.css');
+@import url('./variant.css');
+
+.icon-shape * {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.icon-shape {
+	display: inline-flex;
+}

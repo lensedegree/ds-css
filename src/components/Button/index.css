@@ -1,6 +1,12 @@
 @import url('./variant.css');
 @import url('./size.css');
 
+.button * {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 .button {
 	height: 100%;
 	display: flex;
@@ -9,7 +15,7 @@
 	
 	border-radius: 4px;
 
-	gap: 10px;
+	gap: 10px; /* FIXME: Espaçamento inexistente no DS */
 	
 	cursor: pointer;
 }

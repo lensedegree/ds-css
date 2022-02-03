@@ -1,0 +1,88 @@
+.action--hidden {
+	display: none;
+}
+
+.action--add {
+	width: 24px;
+	height: 24px;
+
+	position: absolute;
+	right: 0;
+	bottom: 0;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	border-radius: 9999px;
+
+	background-color: var(--color-primary-01);
+
+	color: var(--surface-color-11);
+	font-family: var(--font-family-02);
+	font-size: var(--font-size-zee);
+	line-height: var(--line-height-medium);
+}
+
+.action--add > span:first-child {
+	width: 10px; /* Com 20px ficou parecido */
+	height: 10px; /* Com 20px ficou parecido */
+	content: url('../../assets/add_black_24dp.svg');
+	filter: invert();
+}
+
+.action--delete {
+	width: 24px;
+	height: 24px;
+
+	position: absolute;
+	right: 0;
+	bottom: 0;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	border-radius: 9999px;
+
+	background-color: var(--color-secundary-03);
+
+	color: var(--surface-color-11);
+	font-family: var(--font-family-02);
+	font-size: var(--font-size-zee);
+	line-height: var(--line-height-medium);
+}
+
+.action--delete > span:first-child {
+	width: 10px; /* Com 20px ficou parecido */
+	height: 10px; /* Com 20px ficou parecido */
+	content: url('../../assets/close_black_24dp.svg');
+	filter: invert();
+}
+
+.action--edit {
+	width: 24px;
+	height: 24px;
+
+	position: absolute;
+	right: 0;
+	bottom: 0;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	border-radius: 9999px;
+
+	background-color: var(--surface-color-10);
+
+	font-family: var(--font-family-02);
+	font-size: var(--font-size-zee);
+	line-height: var(--line-height-medium);
+}
+
+.action--edit > span:first-child {
+	width: 10px; /* Com 20px ficou parecido */
+	height: 10px; /* Com 20px ficou parecido */
+	content: url('../../assets/edit_black_24dp.svg');
+}

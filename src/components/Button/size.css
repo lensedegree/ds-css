@@ -1,5 +1,5 @@
 .button.size--large {
-	padding-top: 14px;
+	padding-top: var(--spacing-tiny);
 	padding-bottom: var(--spacing-xxxsm);
 	padding-left: var(--spacing-md);
 	padding-right: var(--spacing-md);
@@ -11,7 +11,7 @@
 }
 
 .button.size--medium {
-	padding-top: 14px;
+	padding-top: var(--spacing-tiny);
 	padding-bottom: var(--spacing-xxxsm);
 	padding-left: var(--spacing-md);
 	padding-right: var(--spacing-md);

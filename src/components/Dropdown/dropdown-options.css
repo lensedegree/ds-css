@@ -1,0 +1,49 @@
+.dropdown-options.deactive {
+	display: none;
+}
+
+.dropdown-options.active {
+	border-top: 1px solid var(--surface-color-07);
+	cursor: pointer;
+}
+
+.dropdown-options option {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	box-shadow: 0px 3px 5px rgba(0,0,0,0.15);
+	background-color: var(--surface-color-10);
+
+	padding-top: var(--spacing-xxxsm);
+	padding-right: var(--spacing-xxxsm);
+	padding-bottom: var(--spacing-xxxsm);
+	padding-left: var(--spacing-xxxsm);
+
+	color: var(--surface-color-07);
+	font-family: var(--font-family-02);
+	font-size: var(--font-size-weeny);
+	line-height: var(--line-height-medium);
+}
+.dropdown-options option:hover {
+	background: var(--surface-color-09);
+}
+
+.dropdown-options option.selected {
+	color: var(--surface-color-05);
+	background: var(--surface-color-09);
+	cursor: initial;
+}
+
+.dropdown-options option.selected > span:last-child {
+	width: 14px;
+	height: 14px;
+	content: url('../../assets/done_black_24dp.svg');
+	filter: /* --surface-color-06 => #757575 */
+		invert(43%) 
+		sepia(0%) 
+		saturate(94%)
+		hue-rotate(146deg) 
+		brightness(105%) 
+		contrast(82%);
+}

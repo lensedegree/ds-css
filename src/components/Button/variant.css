@@ -12,6 +12,19 @@
 	text-decoration: underline;
 }
 
+.button.variant--basic > span:first-child {
+	width: 16px;
+	height: 16px;
+	content: url('../../assets/arrow_forward_black_24dp.svg');
+	filter: /* --color-primary-01 => #4673ff */
+		invert(45%) 
+		sepia(33%) 
+		saturate(6423%) 
+		hue-rotate(213deg) 
+		brightness(99%) 
+		contrast(103%);
+}
+
 .button.variant--primary {
 	background: var(--color-primary-01);
 	color: var(--surface-color-11);
@@ -55,5 +68,5 @@
 	border: 1px solid var(--surface-color-09);
 }
 .button.variant--disable:hover {
-	cursor: default;
+	cursor: default; /* FIXME: Colocar cursor not-allowed? */
 }

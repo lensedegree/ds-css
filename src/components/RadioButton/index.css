@@ -1,0 +1,28 @@
+@import url('./alignment.css');
+@import url('./size.css');
+
+.radio-button * {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.radio-button {
+	color: var(--surface-color-02);
+	font-family: var(--font-family-02);
+}
+
+.radio-button > span {
+	display: flex;
+	align-items: center;
+	gap: var(--spacing-mini);
+}
+
+.radio-button input[type="radio"] {
+	all: inherit;
+	content: url('../../assets/radio_button_unchecked_black_24dp.svg');
+}
+
+.radio-button input[type="radio"]:checked {
+	content: url('../../assets/radio_button_checked_black_24dp.svg');
+}

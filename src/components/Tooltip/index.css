@@ -1,0 +1,57 @@
+.tooltip-container * {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.tooltip-container {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+/* FIXME: Solução "gambiarra", procurar outra forma de resolver */
+.tooltip-container > span:first-child {
+	height: 50px;
+	margin-top: -12px;
+	margin-bottom: -21px;
+	align-self: center;
+ 	content: url('../../assets/arrow_drop_up_black_24dp.svg');
+ 	filter: 
+		invert(100%) 
+		sepia(92%) 
+		saturate(31%) 
+		hue-rotate(243deg) 
+		brightness(113%) 
+		contrast(90%);
+}
+
+.tooltip-container > .tooltip {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	background: var(--surface-color-10);
+	border-radius: 4px;
+	padding-top: var(--spacing-tiny);
+	padding-right: var(--spacing-xxxsm);
+	padding-bottom: var(--spacing-xxxsm);
+	padding-left: var(--spacing-xxxsm);
+	font-family: var(--font-family-02);
+	font-size: var(--font-size-mini);
+	line-height: var(--line-height-close);
+	color: var(--surface-color-05);
+	box-shadow: 0px 3px 5px rgba(0,0,0,.15); /* FIXME: Não especificado no DS */
+}
+
+.tooltip-container > .tooltip > span > a {
+	color: var(--color-primary-01);
+	cursor: pointer;
+}
+
+.tooltip-container > .tooltip > span  > a:hover {
+	text-decoration: underline;
+}
+
+.tooltip-container.variant--definition > span:first-child {
+	display: none;
+}

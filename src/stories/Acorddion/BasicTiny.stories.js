@@ -3,62 +3,47 @@ import '../../components/Acorddion/index.css'
 export default {
 	title: 'Base Components/Acorddion',
 	argTypes: {
-		// variant: {
-		// 	options: ['basic'],
-		// 	control: { type: 'radio' },
-		// 	defaultValue: 'basic'
-		// },
-		// size: {
-		// 	options: ['tiny'],
-		// 	control: { type: 'radio' },
-		// 	defaultValue: 'tiny'
-		// },
 		active: {
 			options: ['false', 'true'],
 			control: { type: 'boolean' },
 			defaultValue: 'true'
 		},
+		title: {
+			control: { type: 'text' },
+			defaultValue: 'Qual é a diferença entre a Maratona Guidelines e o Grid '
+		},
+		body: {
+			control: { type: 'text' },
+			defaultValue: 'O acordeão oferece grandes quantidades de conteúdo em um pequeno espaço por meio de divulgação progressiva.'
+		},
 	},
   decorators: [(story) => `
     <div style="
-			width: 288px;
+			width: 250px;
     ">
       ${story()}
     </div>
-  `]
+  `],
 }
 
-export const BasicTiny = ({ active }) => `
+export const BasicTiny = ({ active, title, body }) => `
 	<div class="acorddion">
 		<div class="
 			acorddion-title
 			variant--basic
 			size--tiny
-			${active ? 'active' : ''}
+			${active ? 'active' : 'deactive'}
 		">
-			<p>
-				Qual é a diferença entre a Maratona Guidelines e o Grid
-			</p>
-			<span class="material-icons md-20">
-				${active ? 'keyboard_arrow_down' : 'expand_less'}
-				<style>
-					.material-icons.md-20 {
-						font-size: var(--font-size-tiny);
-						margin-left: var(--spacing-sm);
-					}
-				</style>
-			</span>
+			<p>${title}</p>
+			<span></span>
 		</div>
 
 		<div class="
 			acorddion-body
 			size--tiny
-			${active ? 'enabled': 'disabled'}
+			${active ? 'active': 'deactive'}
 		">
-			<p>
-				O acordeão oferece grandes quantidades de conteúdo em um pequeno espaço 
-				por meio de divulgação progressiva.
-			</p>
+			<p>${body}</p>
 		</div>
 	</div>
 `

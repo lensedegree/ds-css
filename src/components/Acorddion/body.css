@@ -13,10 +13,10 @@
 	padding: var(--spacing-sm);
 }
 
-.acorddion .acorddion-body.disabled {
+.acorddion .acorddion-body.deactive {
 	display: none;
 }
 
-.acorddion .acorddion-body.enabled {
+.acorddion .acorddion-body.active {
 	display: inherit;
 }

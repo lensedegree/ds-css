@@ -1,0 +1,48 @@
+@import url('./format.css');
+
+.modal * {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.modal {
+	background-color: var(--surface-color-10);
+	border: none;
+	border-radius: 4px;
+	box-shadow: 0px 0px 5px rgba(0,0,0,0.25); 
+	/* FIXME: Shadow não especificada no DS */
+}
+
+.modal > span:first-child {
+	display: flex;
+	align-items: flex-start;
+}
+
+.modal > span:first-child > span:first-child {
+	display: flex;
+	flex-direction: column;
+	gap: var(--spacing-mini);
+}
+
+.modal > span:first-child > span:first-child > p:first-child {
+	font-family: var(--font-family-02);
+	font-size: var(--font-size-weeny);
+	line-height: var(--line-height-medium);
+	font-weight: 500; /* FIXME: Medium não existe => 500 */
+	color: var(--surface-color-00);
+}
+
+.modal > span:first-child > span:first-child > p:last-child {
+	font-family: var(--font-family-02);
+	font-size: var(--font-size-mini);
+	line-height: var(--line-height-medium);
+	color: var(--surface-color-06);
+}
+
+.modal > span:last-child {
+	display: flex;
+	margin-top: 34px; /* FIXME: Espaçamento inexistente no DS */
+	gap: var(--spacing-xxsm); /* FIXME: O espaçamento é fixo em 20px ou fluido com os botões
+														nas extremidades ? */
+}

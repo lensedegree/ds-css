@@ -1,0 +1,43 @@
+/*
+ * Reward Toast
+ */
+
+.toast.variant--reward {
+	background-color: var(--color-primary-01);
+	color: var(--surface-color-11);
+}
+
+.toast.variant--reward > span:first-child {
+	flex-direction: row;
+	margin: 0;
+}
+
+.toast.variant--reward > span:first-child > span:first-child {
+	display: none;
+}
+
+.toast.variant--reward > span:first-child > span:last-child {
+	display: flex;
+	align-items: center;
+	margin: 0;
+	margin-left: auto;
+}
+
+.toast.variant--reward > span:first-child > span:last-child > span {
+	font-size: var(--font-size-tiny);
+	line-height: var(--line-height-tight);
+	font-weight: normal; /* FIXME: Ficou mais fiel com 300 */
+	cursor: inherit;
+}
+
+.toast.variant--reward > span:first-child > span:last-child > span:last-child {
+	width: 20px;
+	height: 20px;
+	margin-left: var(--spacing-zee);
+	content: url('../../assets/monetization_on_black_24dp.svg');
+	filter: invert();
+}
+
+.toast.variant--reward > span:last-child {
+	display: none;
+}

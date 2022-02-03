@@ -16,40 +16,23 @@ export default {
     icon: {
       control: { type: 'boolean' },
 			defaultValue: 'true',
-    }
+    },
+		content: {
+			control: { type: 'text' },
+			defaultValue: 'Button'
+		},
   },
-  decorators: [(story) => `
-    <div style="
-      display: flex;
-      flex-direction: column;
-    
-      align-items: flex-start;
-    
-      padding: 30px;
-      
-      gap: 30px;
-    ">
-      ${story()}
-    </div>
-  `]
 }
 
-export const Button = ({ variant, size, icon }) => {
+export const Button = ({ variant, size, icon, content }) => {
   if (variant === 'basic') {
     return `
       <button class="
         button
         variant--basic
       ">
-        Descobrir mais
-        <span class="material-icons md-16">
-          arrow_forward
-          <style>
-            .material-icons.md-16 {
-              font-size: 16px;
-            }
-          </style>
-        </span>
+        ${content}
+        <span></span>
       </button>
     `
   }
@@ -61,11 +44,11 @@ export const Button = ({ variant, size, icon }) => {
         variant--${variant ?? 'primary'}
         size--${size ?? 'large'}
       ">
-        Download
+        ${content}
         <span class="material-icons-outlined md-18">
           file_download
           <style>
-            .material-icons.md-18 {
+            .material-icons-outlined.md-18 {
               font-size: 18px;
             }
           </style>
@@ -79,6 +62,6 @@ export const Button = ({ variant, size, icon }) => {
       button
       variant--${variant ?? 'primary'}
       size--${size ?? 'large'}
-    ">Button</button>
+    ">${content}</button>
   `
 }

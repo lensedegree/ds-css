@@ -1,0 +1,36 @@
+@import url('./size.css');
+@import url('./state.css');
+@import url('./action.css');
+
+.avatar-container * {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.avatar-container {
+	position: relative;
+}
+
+.avatar {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+
+	border-radius: 9999px;
+	overflow: hidden;
+}
+
+.avatar img {
+	max-height: 100%;
+}
+
+/* FIXME: As notificações têm tamanhos fixos, e isso faz com 
+	que fiquem desproporcionais nos tamanhos small e large */
+
+/* TODO: 
+	- Avatar with Text
+	- Avatar group
+	- Avatar progress
+*/

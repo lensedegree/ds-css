@@ -12,7 +12,11 @@ export default {
 			options: ['false', 'true'],
       control: { type: 'boolean' },
 			defaultValue: 'true',
-    }
+    },
+		content: {
+			control: { type: 'text' },
+			defaultValue: 'Button'
+		},
   },
   decorators: [(story) => `
     <div style="
@@ -20,32 +24,23 @@ export default {
       flex-direction: column;
     
       align-items: flex-start;
-    
-      padding: 30px;
       
-      gap: 30px;
+      gap: 15px;
     ">
       ${story()}
     </div>
   `]
 }
 
-export const Variants = ({ size, icon }) => {
+export const Variants = ({ size, icon, content }) => {
 	if (icon) {
 		return `
 			<button class="
 				button 
 				variant--basic
 			">
-				Descobrir mais
-				<span class="material-icons md-16">
-					arrow_forward
-					<style>
-						.material-icons.md-16 {
-							font-size: 16px;
-						}
-					</style>
-				</span>
+				${content}
+				<span></span>
 			</button>
 		
 			<button class="
@@ -53,11 +48,11 @@ export const Variants = ({ size, icon }) => {
 				variant--primary
 				size--${size ?? 'large'}
 			">
-				Download
+				${content}
 				<span class="material-icons-outlined md-18">
           file_download
           <style>
-            .material-icons.md-18 {
+            .material-icons-outlined.md-18 {
               font-size: 18px;
             }
           </style>
@@ -69,11 +64,11 @@ export const Variants = ({ size, icon }) => {
 				variant--secundary
 				size--${size ?? 'large'}
 			">
-				Download
+				${content}
 				<span class="material-icons-outlined md-18">
           file_download
           <style>
-            .material-icons.md-18 {
+            .material-icons-outlined.md-18 {
               font-size: 18px;
             }
           </style>
@@ -85,11 +80,11 @@ export const Variants = ({ size, icon }) => {
 				variant--tertiary
 				size--${size ?? 'large'}
 			">
-				Download
+				${content}
 				<span class="material-icons-outlined md-18">
           file_download
           <style>
-            .material-icons.md-18 {
+            .material-icons-outlined.md-18 {
               font-size: 18px;
             }
           </style>
@@ -101,11 +96,11 @@ export const Variants = ({ size, icon }) => {
 				variant--danger
 				size--${size ?? 'large'}
 			">
-				Download
+				${content}
 				<span class="material-icons-outlined md-18">
           file_download
           <style>
-            .material-icons.md-18 {
+            .material-icons-outlined.md-18 {
               font-size: 18px;
             }
           </style>
@@ -117,11 +112,11 @@ export const Variants = ({ size, icon }) => {
 				variant--disable
 				size--${size ?? 'large'}
 			">
-				Download
+				${content}
 				<span class="material-icons-outlined md-18">
           file_download
           <style>
-            .material-icons.md-18 {
+            .material-icons-outlined.md-18 {
               font-size: 18px;
             }
           </style>
@@ -135,7 +130,7 @@ export const Variants = ({ size, icon }) => {
 			button
 			variant--basic
 		">
-			Descobrir mais
+			${content}
 			<span class="material-icons md-16">
 				arrow_forward
 				<style>
@@ -150,30 +145,30 @@ export const Variants = ({ size, icon }) => {
 			button
 			variant--primary
 			size--${size ?? 'large'}
-		">Button</button>
+		">${content}</button>
 
 		<button class="
 			button
 			variant--secundary
 			size--${size ?? 'large'}
-		">Button</button>
+		">${content}</button>
 
 		<button class="
 			button
 			variant--tertiary
 			size--${size ?? 'large'}
-		">Button</button>
+		">${content}</button>
 
 		<button class="
 			button
 			variant--danger
 			size--${size ?? 'large'}
-		">Button</button>
+		">${content}</button>
 
 		<button class="
 			button
 			variant--disable
 			size--${size ?? 'large'}
-		">Button</button>
+		">${content}</button>
 	`
 }

@@ -1,0 +1,46 @@
+@import url('./message.css');
+
+.textarea-input * {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.textarea-input {
+	display: flex;
+	align-items: center;
+	background-color: var(--surface-color-10);
+	border: 1px solid var(--surface-color-10);
+	border-radius: 4px;
+}
+
+/* FIXME:
+	 Por algum motivo a borda ficou sem as pontas
+	 (que deveriam ser arredondadas)
+*/
+.textarea-input:focus-within {
+	border: 1px solid var(--color-primary-01);
+}
+
+.textarea-input > textarea {
+	all: unset;
+	width: 100%;
+	padding-top: var(--spacing-tiny);
+	padding-right: var(--spacing-xxsm);
+	padding-bottom: var(--spacing-xxxsm);
+	padding-left: var(--spacing-xxsm);
+	background-color: var(--surface-color-10);
+	font-family: var(--font-family-02);
+	font-size: var(--font-size-weeny);
+	line-height: var(--line-height-medium);
+	color: var(--surface-color-05);
+	resize: none;
+	white-space: pre-wrap;
+  overflow: hidden;
+}
+
+/* 
+	TODO:
+	Procurar uma maneira de estilizar o scroll - no momento o scroll
+	está desabilitado
+*/

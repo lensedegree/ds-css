@@ -1,0 +1,12 @@
+.textarea-input + .message.deactive {
+	display: none;
+}
+
+.textarea-input + .message.active {
+	margin-top: var(--spacing-mini);
+
+	font-family: var(--font-family-02);
+	font-size: var(--font-size-zee);
+	line-height: var(--line-height-medium);
+	color: var(--surface-color-07);
+}

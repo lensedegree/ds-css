@@ -1,0 +1,22 @@
+.modal.format--mobile {
+	padding-top: var(--spacing-xsm);
+	padding-right: var(--spacing-xsm);
+	padding-bottom: var(--spacing-xsm);
+	padding-left: var(--spacing-xsm);
+}
+
+.modal.format--mobile > span:first-child > span:last-child {
+	display: none;
+}
+
+.modal.format--desktop {
+	padding-top: var(--spacing-sm);
+	padding-right: var(--spacing-sm);
+	padding-bottom: var(--spacing-sm);
+	padding-left: var(--spacing-sm);
+}
+
+.modal.format--desktop > span:first-child > span:last-child {
+	margin-left: auto;
+	content: url('../../assets/clear_black_24dp.svg');
+}

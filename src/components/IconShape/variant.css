@@ -1,0 +1,9 @@
+.icon-shape.variant--filled {
+	background-color: var(--color-primary-01);
+	color: var(--surface-color-11);
+	border: 2px solid var(--color-primary-01);
+}
+
+.icon-shape.variant--outlined {
+	border: 2px solid var(--color-primary-01);
+}

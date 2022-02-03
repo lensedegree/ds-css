@@ -1,0 +1,7 @@
+.link.variant--basic {
+	color: var(--color-primary-01);
+}
+
+.link.variant--danger {
+	color: var(--color-secundary-03);
+}

@@ -1,0 +1,14 @@
+.avatar-container.size--large {
+	width: 96px;
+	height: 96px;
+}
+
+.avatar-container.size--medium {
+	width: 64px;
+	height: 64px;
+}
+
+.avatar-container.size--small {
+	width: 40px;
+	height: 40px;
+}

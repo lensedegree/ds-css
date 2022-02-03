@@ -1,0 +1,48 @@
+.breadcrumb * {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.breadcrumb {
+	display: flex;
+	align-items: center;
+
+	/* FIXME:
+		O espaçamento no XD entre a migalha e a divisão
+		é de 12px, porém no XD o ícone têm 7,5 de largura
+		e 12 de altura, já o ícone de fato têm 12 de largura
+		e 12 de altura, portanto, será retirado 4,5/2 do gap
+		=> gap = 12 - 4,5/2 = 9,75
+	*/
+	gap: 9.75px; /* FIXME: Espaçamento inexistente */
+
+	color: var(--surface-color-07);
+	font-family: var(--font-family-02);
+	font-size: var(--font-size-weeny);
+	line-height: var(--line-height-medium);
+}
+
+.breadcrumb a {
+	text-decoration: none;
+	color: var(--color-primary-01);
+	cursor: pointer;
+}
+
+.breadcrumb.variant--primary a + span::before {
+	content: '/';
+	
+}
+
+.breadcrumb.variant--secundary a + span {
+	width: 12px;
+	height: 12px;
+	content: url('../../assets/navigate_next_black_24dp.svg');
+	filter: /* --surface-color-07 => #959595 */
+		invert(63%) 
+		sepia(1%) 
+		saturate(0%) 
+		hue-rotate(9deg) 
+		brightness(94%) 
+		contrast(86%); 
+}

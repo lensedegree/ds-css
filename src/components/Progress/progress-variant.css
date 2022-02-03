@@ -1,0 +1,60 @@
+.progress.variant--desktop {
+	display: flex;
+}
+
+.progress.variant--desktop > .step {
+	border-top-width: 2px;
+	border-top-style: solid;
+	gap: var(--spacing-mini);
+}
+
+.progress.variant--desktop > .step > div {
+	display: flex;
+	align-items: center;	
+}
+
+.progress.variant--desktop > .step > div > hr {
+	display: none;
+}
+
+.progress.variant--mobile {
+	display: flex;
+}
+
+.progress.variant--mobile > .step {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	border: none;
+	padding: 0;
+}
+
+.progress.variant--mobile > .step > p {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 64px; /* 22px linha esquerda, 20px icon, 22px linha direita */
+	text-align: center;
+}
+
+.progress.variant--mobile 
+	> .step:not(.variant--error):not(.variant--current)
+	> p {
+		display: none;
+}
+
+.progress.variant--mobile > .step > div {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.progress.variant--mobile > .step:first-child > div > hr {
+	display: none;
+}
+
+.progress.variant--mobile > .step > div > hr {
+		width: 22px;
+		height: 2px;
+		border-style: none;
+}

@@ -1,0 +1,101 @@
+.progress > .step.variant--success {
+	border-top-color: var(--color-primary-01);
+}
+
+.progress > .step.variant--success > div > span {
+	content: url('../../assets/check_circle_black_24dp.svg');
+	filter: 
+		invert(34%) 
+		sepia(77%) 
+		saturate(1032%) 
+		hue-rotate(202deg)
+		brightness(110%)
+		contrast(107%);
+}
+
+.progress > .step.variant--success > div > hr {
+	color: var(--color-primary-01);
+	background-color: var(--color-primary-01);
+}
+
+.progress > .step.variant--current {
+	border-top-color: var(--color-primary-01);
+	/* FIXME: O ideal é a bordar ser cinza no atual? (significando que ainda
+	não foi concluído) */
+}
+
+.progress > .step.variant--current > div > span {
+	content: url('../../assets/radio_button_checked_black_24dp.svg');
+	filter: 
+		invert(34%) 
+		sepia(77%) 
+		saturate(1032%) 
+		hue-rotate(202deg)
+		brightness(110%)
+		contrast(107%);
+}
+
+.progress > .step.variant--current > div > hr {
+	color: var(--color-primary-01);
+	background-color: var(--color-primary-01);
+}
+
+.progress > .step.variant--error {
+	border-top-color: var(--color-secundary-03);
+}
+
+.progress > .step.variant--error > div > span {
+	content: url('../../assets/info_black_24dp.svg');
+	filter: /* FIXME: 1.2 de loss */
+		invert(31%) 
+		sepia(38%) 
+		saturate(3182%) 
+		hue-rotate(338deg) 
+		brightness(106%) 
+		contrast(95%);
+}
+
+.progress > .step.variant--error > div > hr {
+	color: var(--color-secundary-03);
+	background-color: var(--color-secundary-03);
+}
+
+.progress > .step.variant--optional {
+	border-top-color: var(--surface-color-09);
+}
+
+.progress > .step.variant--optional > div > span {
+	content: url('../../assets/radio_button_unchecked_black_24dp.svg');
+	filter: 
+		invert(44%) 
+		sepia(1%) 
+		saturate(0%) 
+		hue-rotate(265deg) 
+		brightness(102%) 
+		contrast(80%);
+}
+
+.progress > .step.variant--optional > div > hr {
+	color: var(--surface-color-09);
+	background-color: var(--surface-color-09);
+}
+
+.progress > .step.variant--next {
+	border-top-color: var(--surface-color-09);
+}
+
+.progress > .step.variant--next > div > span {
+	content: url('../../assets/radio_button_unchecked_black_24dp.svg');
+	filter: 
+		invert(95%) 
+		sepia(0%) 
+		saturate(1934%)
+		hue-rotate(143deg) 
+		brightness(92%) 
+		contrast(67%);
+}
+
+.progress > .step.variant--next > div > hr {
+	color: var(--surface-color-09);
+	background-color: var(--surface-color-09);
+}

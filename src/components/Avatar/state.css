@@ -1,0 +1,53 @@
+.state--hidden {
+	display: none;
+}
+
+.state--online {
+	width: 24px;
+	height: 24px;
+
+	position: absolute;
+	right: 0;
+	bottom: 0;
+
+	background-color: var(--color-secundary-02);
+
+	border: 4px solid var(--surface-color-11);
+	border-radius: 9999px;
+}
+
+.state--offline {
+	width: 24px;
+	height: 24px;
+
+	position: absolute;
+	right: 0;
+	bottom: 0;
+
+	background-color: var(--surface-color-07);
+
+	border: 4px solid var(--surface-color-11);
+	border-radius: 9999px;
+}
+
+.state--notify {
+	width: 24px;
+	height: 24px;
+
+	position: absolute;
+	top: 0;
+	right: 0;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	border-radius: 9999px;
+
+	background-color: var(--color-primary-01);
+
+	color: var(--surface-color-11);
+	font-family: var(--font-family-02);
+	font-size: var(--font-size-zee);
+	line-height: var(--line-height-medium);
+}

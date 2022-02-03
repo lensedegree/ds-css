@@ -5,6 +5,8 @@
 	font-family: var(--font-family-02);
 	color: var(--surface-color-11);
 	border-radius: 4px;
+	
+	cursor: pointer;
 }
 
 /* 
@@ -16,7 +18,29 @@
 	width: 100%;
 }
 
-.acorddion .acorddion-title.variant--basic {
+.acorddion-title.deactive > span:last-child {
+	width: 20px;
+	height: 20px;
+	margin-left: var(--spacing-sm);
+	content: url('../../assets/expand_more_black_24dp.svg');
+	filter: /* --surface-color-07 => #959595 */
+		invert(63%) 
+		sepia(1%) 
+		saturate(0%) 
+		hue-rotate(9deg) 
+		brightness(94%) 
+		contrast(86%); 
+}
+
+.acorddion-title.active > span:last-child {
+	width: 20px;
+	height: 20px;
+	margin-left: var(--spacing-sm);
+	content: url('../../assets/expand_less_black_24dp.svg');
+	filter: invert();
+}
+
+.acorddion .acorddion-title.variant--basic.deactive {
 	background-color: var(--surface-color-10);
 	color: var(--surface-color-06);
 }
