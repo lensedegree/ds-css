@@ -16,7 +16,7 @@ export const Overflow = ({ active }) => `
 		overflow
 		menu
 	">
-		<div></div>
+		<span></span>
 	</div>
 	<div class="
 		overflow
@@ -24,7 +24,7 @@ export const Overflow = ({ active }) => `
 		${active}
 	">
 		<option>Option 1</option>
-		<option>Option 2</option>
+		<a href="#"><option>Option 2</option></a>
 		<option>Option 3</option>
 	</div>
 `

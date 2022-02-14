@@ -12,7 +12,7 @@
 /* 
 	FIXME
 	Deve haver outra abordagem - pois o P depende do usuário, se ele colocar
-	h1,h2,etc a estilização não irá funcionar
+	h1,h2, etc a estilização não irá funcionar
 */
 .acorddion-title p {
 	width: 100%;

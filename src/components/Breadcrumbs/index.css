@@ -1,10 +1,10 @@
-.breadcrumb * {
+.breadcrumbs * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
 
-.breadcrumb {
+.breadcrumbs {
 	display: flex;
 	align-items: center;
 
@@ -17,24 +17,27 @@
 	*/
 	gap: 9.75px; /* FIXME: Espaçamento inexistente */
 
-	color: var(--surface-color-07);
 	font-family: var(--font-family-02);
 	font-size: var(--font-size-weeny);
 	line-height: var(--line-height-medium);
 }
 
-.breadcrumb a {
+.breadcrumbs a {
 	text-decoration: none;
 	color: var(--color-primary-01);
 	cursor: pointer;
 }
 
-.breadcrumb.variant--primary a + span::before {
-	content: '/';
-	
+.breadcrumbs a:last-child {
+	cursor: inherit;
+	color: var(--surface-color-07);
 }
 
-.breadcrumb.variant--secundary a + span {
+.breadcrumbs.variant--primary a + span::before {
+	content: '/';
+}
+
+.breadcrumbs.variant--secundary a + span {
 	width: 12px;
 	height: 12px;
 	content: url('../../assets/navigate_next_black_24dp.svg');

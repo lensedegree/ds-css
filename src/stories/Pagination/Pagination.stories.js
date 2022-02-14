@@ -9,15 +9,16 @@ export default {
 			control: { type: 'radio' },
 			defaultValue: 'default',
 		},
-		state: {
-			options: ['initial', 'middle', 'final'],
-			control: { type: 'radio' },
-			defaultValue: 'default',
+		page: {
+			control: { type: 'number' },
+		},
+		nPages: {
+			control: { type: 'number' },
 		},
 	}
 }
 
-export const Pagination = ({ variant, state }) => {
+export const Pagination = ({ variant, page, nPages }) => {
 	if(variant === 'default') {
 		return `
 			<div class="
@@ -58,14 +59,18 @@ export const Pagination = ({ variant, state }) => {
 			</div>
 		`
 	} else if (variant === 'basic') {
+		/* FIXME:
+		 * Neste input o usuário não têm nenhum botão de "enviar"
+		 * o número digitado no input
+		 */
 		return `
 			<div class="
 				pagination
 				variant--basic
 			">
 				<div><span></span></div>
-				<div><input value="01" /></div>
-				<div><p>de 258</p></div>
+				<div><input value="${page}" /></div>
+				<div><p>de ${nPages}</p></div>
 				<div><span></span></div>
 			</div>
 		`
@@ -77,41 +82,176 @@ export const Pagination = ({ variant, state }) => {
 	 * de números que não saiu com all: unset, além de permitir da mesma
 	 * forma que seja adicionado letras.
 	 */
+
+	if(nPages < 7) {
+		return `
+			<div class="
+				pagination
+				variant--extended
+			">
+				<div>
+					<span></span>
+				</div>
+
+				<div>
+					<div class="
+						${ page === 1 ? 'active' : 'deactive' }
+					">1</div>
+					<div class="
+						${ page === 2 ? 'active' : 'deactive' }
+					">2</div>
+					${ 
+						nPages >= 3 
+						? `
+							<div class="
+								${ page === 3 ? 'active' : 'deactive' }
+							">3</div>
+						`
+						: ''
+					}
+					${ 
+						nPages >= 4 
+						? `
+							<div class="
+								${ page === 4 ? 'active' : 'deactive' }
+							">4</div>
+						`
+						: ''
+					}
+					${ 
+						nPages >= 5 
+						? `
+							<div class="
+								${ page === 5 ? 'active' : 'deactive' }
+							">5</div>
+						`
+						: ''
+					}
+					${ 
+						nPages === 6 
+						? `
+							<div class="
+								${ page === 6 ? 'active' : 'deactive' }
+							">6</div>
+						`
+						: ''
+					}
+				</div>
+
+				<div>
+					<span></span>
+				</div>
+			</div>
+		`
+	}
+
+	if(page < 4) {
+		return `
+			<div class="
+				pagination
+				variant--extended
+			">
+				<div>
+					<span></span>
+				</div>
+
+				<div>
+					<div class="
+						${page === 1 ? 'active' : 'deactive'}
+					">1</div>
+					<div class="
+						${page === 2 ? 'active' : 'deactive'}
+					">2</div>
+					<div class="
+						${page === 3 ? 'active' : 'deactive'}
+					">3</div>
+					<div class="deactive">4</div>
+					<div class="deactive">5</div>
+
+					<div class="horiz">
+						<span></span>
+					</div>
+
+					<div class="deactive">${nPages}</div>
+				</div>
+
+				<div>
+					<span></span>
+				</div>
+
+				<div>
+					<input />
+					<span></span>
+				</div>
+			</div>
+		`
+	} else if (page < nPages - 2) {
+		return `
+			<div class="
+				pagination
+				variant--extended
+			">
+				<div>
+					<span></span>
+				</div>
+
+				<div>
+					<div class="deactive">1</div>
+
+					<div class="horiz">
+						<span></span>
+					</div>
+
+					<div class="deactive">${page - 1}</div>
+					<div class="active">${page}</div>
+					<div class="deactive">${page + 1}</div>
+
+					<div class="horiz">
+						<span></span>
+					</div>
+
+					<div class="deactive">${nPages}</div>
+				</div>
+
+				<div>
+					<span></span>
+				</div>
+
+				<div>
+					<input />
+					<span></span>
+				</div>
+			</div>
+		`
+	}
+
 	return `
 		<div class="
 			pagination
 			variant--extended
-			state--${state}
 		">
 			<div>
 				<span></span>
 			</div>
 
 			<div>
-				<div class="
-					${state === 'initial' ? 'active' : 'deactive'}
-				">1</div>
+				<div class="deactive">1</div>
 
-				<div class="initial-horiz">
+				<div class="horiz">
 					<span></span>
 				</div>
 
-				<div>X</div>
-				<div>X</div>
-
+				<div class="deactive">${nPages - 4}</div>
+				<div class="deactive">${nPages - 3}</div>
 				<div class="
-					${state === 'middle' ? 'active' : 'deactive'}
-				">X</div>
-
-				<div>X</div>
-
-				<div class="final-horiz">
-					<span></span>
-				</div>
-
+					${page === nPages - 2 ? 'active': 'deactive'}
+				">${nPages - 2}</div>
 				<div class="
-					${state === 'final' ? 'active' : 'deactive'}
-				">258</div>
+					${page === nPages - 1 ? 'active': 'deactive'}
+				">${nPages - 1}</div>
+				<div class="
+					${page >= nPages ? 'active': 'deactive'}
+				">${nPages}</div>
 			</div>
 
 			<div>
@@ -122,7 +262,6 @@ export const Pagination = ({ variant, state }) => {
 				<input />
 				<span></span>
 			</div>
-
 		</div>
 	`
 }

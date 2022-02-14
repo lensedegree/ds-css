@@ -1,8 +1,8 @@
-.textarea-input + .message.deactive {
+.textarea-input + .textarea-message.deactive {
 	display: none;
 }
 
-.textarea-input + .message.active {
+.textarea-input + .textarea-message.active {
 	margin-top: var(--spacing-mini);
 
 	font-family: var(--font-family-02);

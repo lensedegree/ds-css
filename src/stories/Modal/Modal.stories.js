@@ -7,12 +7,12 @@ export default {
 		variant: {
 			options: ['alert', 'confirmation'],
 			control: { type: 'radio' },
-			defaultValue: 'alert',
+			defaultValue: 'confirmation',
 		},
 		format: {
 			options: ['mobile', 'desktop'],
 			control: { type: 'radio' },
-			defaultValue: 'mobile',
+			defaultValue: 'desktop',
 		},
   },
 	// decorators: [(story) => `

@@ -71,9 +71,3 @@
 		brightness(93%) 
 		contrast(89%);
 }
-
-.input.variant--password > span.show:last-child,
-.input.variant--password > span.hide:last-child,
-.input.variant--search > span:last-child.active {
-	cursor: initial;
-}

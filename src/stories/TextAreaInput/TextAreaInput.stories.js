@@ -10,6 +10,10 @@ export default {
   },
 }
 
+/* TODO:
+ * METER O HOVER NO DIV AO INVES DO TEXTAREA
+ */
+
 export const TextAreaInput = ({ helpText }) => `
 	<div class="
 		textarea-input
@@ -19,7 +23,7 @@ export const TextAreaInput = ({ helpText }) => `
 		></textarea>
 	</div>
 	<p class="
-		message 
+		textarea-message
 		${helpText ? 'active': 'deactive'}
 	">
 		Texto de ajuda opcional

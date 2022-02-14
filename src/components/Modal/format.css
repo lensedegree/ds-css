@@ -19,4 +19,5 @@
 .modal.format--desktop > span:first-child > span:last-child {
 	margin-left: auto;
 	content: url('../../assets/clear_black_24dp.svg');
+	cursor: pointer;
 }

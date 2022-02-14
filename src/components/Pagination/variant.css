@@ -42,10 +42,11 @@
 }
 
 .pagination.variant--basic > div:nth-child(2) {
-	padding-top: 16px;
-	padding-right: 19px;
-	padding-bottom: 16px;
-	padding-left: 19px;
+	width: 56px;
+	height: 56px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	background-color: var(--surface-color-10);
 	border-radius: 9999px;
 }
@@ -57,8 +58,8 @@
 
 .pagination.variant--basic > div:nth-child(2) > input {
 	all: unset;
-	width: 18px; /* FIXME: Só aparecem 2 dígitos com o tamanho de 18px 
-								Para aceitar 3 dígitos seria necessário 27px. */
+	width: 27px;
+	text-align: center;
 }
 
 .pagination.variant--basic > div:nth-child(4) > span  {
@@ -89,14 +90,6 @@
 	cursor: pointer;
 }
 
-/* Pages --> */
-
-/* FIXME:
- * - As bolinhas das páginas tiveram que ser tamanho fixo (56x56px)
- * ao invés de fluído (através do padding), pois confirme o número
- * de dígitos ia aumentando, a bolinha ia se tornando uma pílula
- */
-
 .pagination.variant--extended > div:nth-child(2) {
 	display: flex;
 	align-items: center;
@@ -114,8 +107,9 @@
 	justify-content: center;
 	border-radius: 9999px;
 }
+
 .pagination.variant--extended > div:nth-child(2) 
-	> div:not(.initial-horiz):not(.final-horiz):not(.active):hover {
+	> div:not(.horiz):not(.active):hover {
 		background-color: var(--surface-color-10);
 		cursor: pointer;
 }
@@ -125,27 +119,11 @@
 	color: var(--surface-color-11);
 }
 
-.pagination.variant--extended.state--initial > div:nth-child(2) 
-	> div.initial-horiz {
-		display: none;
-}
 .pagination.variant--extended > div:nth-child(2) 
-	> div.initial-horiz > span {
+	> div.horiz > span {
 		width: 20px;
 		content: url('../../assets/more_horiz_black_24dp.svg');
 }
-
-.pagination.variant--extended.state--final > div:nth-child(2) 
-	> div.final-horiz {
-		display: none;
-}
-.pagination.variant--extended > div:nth-child(2) 
-	> div.final-horiz > span  {
-		width: 20px;
-		content: url('../../assets/more_horiz_black_24dp.svg');
-}
-
-/* <-- Pages */
 
 .pagination.variant--extended > div:nth-child(3) > span {
 	width: 20px;

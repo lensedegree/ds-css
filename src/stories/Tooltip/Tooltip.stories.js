@@ -23,6 +23,8 @@ export default {
   `]
 }
 
+/* TODO: Testar melhor, com outros botões */
+
 export const Tooltip = ({ variant, link }) => `
 	${
 		variant === 'click'
@@ -48,9 +50,15 @@ export const Tooltip = ({ variant, link }) => `
 			tooltip
 		">
 			Esse é um tooltip de definição, é o mais comum dentre eles.
-			<span>
-				${link ? '<a>Link Tooltip</a>' : ''}
-			</span>
+			${
+				link
+				? `
+					<span>
+						<a>Link Tooltip</a>
+					</span>
+				`
+				: ''
+			}
 		</div>
 	</div>
 `

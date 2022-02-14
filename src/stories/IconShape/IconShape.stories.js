@@ -16,7 +16,7 @@ export default {
 		variant: {
 			options: ['outlined', 'filled'],
 			control: { type: 'radio' },
-			defaultValue: 'medium'
+			defaultValue: 'filled'
 		},
 	},
 }

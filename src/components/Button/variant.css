@@ -12,7 +12,7 @@
 	text-decoration: underline;
 }
 
-.button.variant--basic > span:first-child {
+.button.variant--basic > span:last-child {
 	width: 16px;
 	height: 16px;
 	content: url('../../assets/arrow_forward_black_24dp.svg');
@@ -68,5 +68,5 @@
 	border: 1px solid var(--surface-color-09);
 }
 .button.variant--disable:hover {
-	cursor: default; /* FIXME: Colocar cursor not-allowed? */
+	cursor: not-allowed;
 }

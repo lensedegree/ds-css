@@ -2,6 +2,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	text-decoration: none;
 }
 
 .overflow.menu {
@@ -18,7 +19,7 @@
 	cursor: pointer;
 }
 
-.overflow.menu > div:first-child {
+.overflow.menu > span:first-child {
 	width: 16px;
 	height: 16px;
 	content: url('../../assets/more_horiz_black_24dp.svg');
@@ -32,7 +33,7 @@
 	box-shadow: 0px 3px 5px rgba(0,0,0,0.15);
 }
 
-.overflow.options > option {
+.overflow.options option {
 	padding-top: var(--spacing-weeny);
 	padding-right: var(--spacing-xsm);
 	padding-bottom: var(--spacing-weeny);
@@ -44,7 +45,7 @@
 	color: var(--surface-color-07);
 }
 
-.overflow.options > option:hover {
+.overflow.options option:hover {
 	background-color: var(--surface-color-09);
 	cursor: pointer; 
 }
