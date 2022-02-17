@@ -1,4 +1,4 @@
-import '../../components/TextareaInput/index.css'
+import '../../components/Textarea/index.css'
 
 export default {
 	title: 'Base Components/Input',
