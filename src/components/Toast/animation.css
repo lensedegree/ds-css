@@ -1,0 +1,4 @@
+@keyframes timeline-decrease {
+	from { width: calc(100% - var(--spacing-xxxsm) - var(--spacing-xxxsm)); }
+	to { width: 0%; }
+}

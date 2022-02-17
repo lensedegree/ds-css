@@ -1,20 +1,15 @@
-import '../../components/TextAreaInput/index.css'
+import '../../components/TextareaInput/index.css'
 
 export default {
 	title: 'Base Components/Input',
   argTypes: {
 		helpText: {
-			control: { type: 'boolean' },
-			defaultValue: 'true'
+			control: { type: 'text' },
 		},
   },
 }
 
-/* TODO:
- * METER O HOVER NO DIV AO INVES DO TEXTAREA
- */
-
-export const TextAreaInput = ({ helpText }) => `
+export const Textarea = ({ helpText }) => `
 	<div class="
 		textarea-input
 	">
@@ -24,8 +19,8 @@ export const TextAreaInput = ({ helpText }) => `
 	</div>
 	<p class="
 		textarea-message
-		${helpText ? 'active': 'deactive'}
+		${helpText && helpText !== '' ? 'active': 'deactive'}
 	">
-		Texto de ajuda opcional
+		${helpText}
 	</p>
 `

@@ -6,18 +6,18 @@ export default {
 		active: {
 			options: ['false', 'true'],
 			control: { type: 'boolean' },
-			defaultValue: 'true'
 		},
 		title: {
 			control: { type: 'text' },
-			defaultValue: 'Qual a diferença entre o grid e a Maratona Guidelines'
 		},
 		body: {
 			control: { type: 'text' },
-			defaultValue: 'O acordeão oferece grandes quantidades de conteúdo em um pequeno espaço por meio de divulgação progressiva. O usuário obtém detalhes importantes sobre o conteúdo subjacente e pode optar por expandir esse conteúdo dentro das restrições do acordeão. Os acordeões funcionam especialmente bem em interfaces móveis ou sempre que o espaço vertical é necessário.'
 		},
 	},
 }
+
+const defaultTitle = 'Qual a diferença entre o grid e a Maratona Guidelines'
+const defaultBody = 'O acordeão oferece grandes quantidades de conteúdo em um pequeno espaço por meio de divulgação progressiva. O usuário obtém detalhes importantes sobre o conteúdo subjacente e pode optar por expandir esse conteúdo dentro das restrições do acordeão. Os acordeões funcionam especialmente bem em interfaces móveis ou sempre que o espaço vertical é necessário.'
 
 export const Basic = ({ active, title, body }) => `
 	<div class="acorddion">
@@ -27,7 +27,7 @@ export const Basic = ({ active, title, body }) => `
 			size--normal
 			${active ? 'active' : 'deactive'}
 		">
-			<p>${title}</p>
+			<p>${title || defaultTitle}</p>
 			<span></span>
 		</div>
 
@@ -36,7 +36,7 @@ export const Basic = ({ active, title, body }) => `
 			size--normal
 			${active ? 'active': 'deactive'}
 		">
-			<p>${body}</p>
+			<p>${body || defaultBody}</p>
 		 </div>
 	</div>
 `

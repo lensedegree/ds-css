@@ -6,7 +6,6 @@ export default {
 		variant: {
 			options: ['primary', 'secundary'],
 			control: { type: 'radio' },
-			defaultValue: 'primary'
 		},
 	},
 }
@@ -14,7 +13,7 @@ export default {
 export const Breadcrumbs = ({ variant }) => `
 	<div class="
 		breadcrumbs
-		variant--${variant}
+		variant--${variant || 'primary'}
 	">
 		<a>Breadcrumb 1</a>
 		

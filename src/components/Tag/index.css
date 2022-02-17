@@ -1,10 +1,10 @@
-.tags * {
+.tag * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
 
-.tags {
+.tag {
 	display: inline-flex;
 	align-items: center;
 	background: var(--color-primary-01);
@@ -15,26 +15,26 @@
 	color: var(--surface-color-11);
 }
 
-.tags > p {
+.tag > p {
 	margin-top: 2px;
 	margin-right: 12px;
 	margin-bottom: 4px;
 	margin-left: 12px;
 }
 
-.tags.variant--selection > div:last-child {
+.tag.variant--selection > div:last-child {
 	display: none;
 }
 
-.tags.variant--filter {
+.tag.variant--filter {
 	padding-right: 0;
 }
 
-.tags.variant--filter > p {
+.tag.variant--filter > p {
 	margin-right: 8px;
 }
 
-.tags.variant--filter > div:last-child {
+.tag.variant--filter > div:last-child {
 	width: 24px;
 	height: 24px;
 	display: flex;
@@ -45,7 +45,7 @@
 	cursor: pointer;
 }
 
-.tags.variant--filter > div > span {
+.tag.variant--filter > div > span {
 	width: 8px; /* FIXME: Icone muito pequeno e não condiz com o DS */
 	content: url('../../assets/clear_black_24dp.svg');
 	filter: invert();

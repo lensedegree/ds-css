@@ -6,10 +6,9 @@ export default {
 		variant: {
 			options: ['definition', 'click'],
 			control: { type: 'radio' },
-			defaultValue: 'definition',
 		},
 		link: {
-			control: { type: 'boolean' },
+			control: { type: 'text' },
 		}
 	},
   decorators: [(story) => `
@@ -43,7 +42,7 @@ export const Tooltip = ({ variant, link }) => `
 	}
 	<div class="
 		tooltip-container
-		variant--${variant}
+		variant--${variant || 'definition'}
 	">
 		<span></span>
 		<div class="
@@ -51,10 +50,10 @@ export const Tooltip = ({ variant, link }) => `
 		">
 			Esse é um tooltip de definição, é o mais comum dentre eles.
 			${
-				link
+				link && link !== ''
 				? `
 					<span>
-						<a>Link Tooltip</a>
+						<a>${link}</a>
 					</span>
 				`
 				: ''

@@ -6,15 +6,12 @@ export default {
 		active: {
 			options: ['false', 'true'],
 			control: { type: 'boolean' },
-			defaultValue: 'true'
 		},
 		title: {
 			control: { type: 'text' },
-			defaultValue: 'Qual é a diferença entre a Maratona Guidelines e o Grid '
 		},
 		body: {
 			control: { type: 'text' },
-			defaultValue: 'O acordeão oferece grandes quantidades de conteúdo em um pequeno espaço por meio de divulgação progressiva.'
 		},
 	},
   decorators: [(story) => `
@@ -26,6 +23,9 @@ export default {
   `],
 }
 
+const defaultTitle = 'Qual é a diferença entre a Maratona Guidelines e o Grid'
+const defaultBody = 'O acordeão oferece grandes quantidades de conteúdo em um pequeno espaço por meio de divulgação progressiva.'
+
 export const BasicTiny = ({ active, title, body }) => `
 	<div class="acorddion">
 		<div class="
@@ -34,7 +34,7 @@ export const BasicTiny = ({ active, title, body }) => `
 			size--tiny
 			${active ? 'active' : 'deactive'}
 		">
-			<p>${title}</p>
+			<p>${title || defaultTitle}</p>
 			<span></span>
 		</div>
 
@@ -43,7 +43,7 @@ export const BasicTiny = ({ active, title, body }) => `
 			size--tiny
 			${active ? 'active': 'deactive'}
 		">
-			<p>${body}</p>
+			<p>${body || defaultBody}</p>
 		</div>
 	</div>
 `

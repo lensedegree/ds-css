@@ -22,6 +22,8 @@
 	font-family: var(--font-family-02);
 	font-size: var(--font-size-zee);
 	line-height: var(--line-height-medium);
+
+	cursor: pointer;
 }
 
 .action--add > span:first-child {
@@ -51,6 +53,8 @@
 	font-family: var(--font-family-02);
 	font-size: var(--font-size-zee);
 	line-height: var(--line-height-medium);
+
+	cursor: pointer;
 }
 
 .action--delete > span:first-child {
@@ -79,6 +83,8 @@
 	font-family: var(--font-family-02);
 	font-size: var(--font-size-zee);
 	line-height: var(--line-height-medium);
+
+	cursor: pointer;
 }
 
 .action--edit > span:first-child {

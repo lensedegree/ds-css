@@ -1,3 +1,4 @@
+@import url('./animation.css');
 @import url('./variant.css');
 @import url('./format.css');
 @import url('./reward.css');
@@ -9,6 +10,7 @@
 }
 
 .toast {
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	padding-top: var(--spacing-xxxsm);
@@ -38,9 +40,16 @@
 	cursor: pointer;
 }
 
+.toast > span:nth-child(2) > hr {
+	border: 0;
+	background-color: transparent;
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+}
+
 .toast > span:last-child > hr {
 	border: 0;
 	background-color: transparent;
-	border-bottom-width: 1px;
+	border-bottom-width: 2px;
 	border-bottom-style: solid;
 }

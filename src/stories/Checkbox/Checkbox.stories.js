@@ -6,17 +6,14 @@ export default {
 		variant: {
 			options: ['basic', 'rounded'],
 			control: { type: 'radio' },
-			defaultValue: 'basic'
 		},
 		alignment: {
 			options: ['vertical', 'horizontal'],
 			control: { type: 'radio' },
-			defaultValue: 'horizontal'
 		},
 		size: {
 			options: ['small', 'medium'],
 			control: { type: 'radio' },
-			defaultValue: 'medium'
 		}
 	},
 }
@@ -24,9 +21,9 @@ export default {
 export const Checkbox = ({ variant, alignment, size }) => `
 	<div class="
 		checkbox
-		alignment--${alignment}
-		size--${size}
-		variant--${variant}
+		variant--${variant || 'basic'}
+		alignment--${alignment || 'horizontal'}
+		size--${size || 'medium'}
 	">
 		<span>
 			<input type="checkbox" name="scales" />

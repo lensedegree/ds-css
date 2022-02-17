@@ -3,6 +3,7 @@
 }
 
 .progress.variant--desktop > .step {
+	width: 100%;
 	border-top-width: 2px;
 	border-top-style: solid;
 	gap: var(--spacing-mini);
@@ -54,7 +55,7 @@
 }
 
 .progress.variant--mobile > .step > div > hr {
-		width: 22px;
-		height: 2px;
-		border-style: none;
+	width: 22px;
+	height: 2px;
+	border-style: none;
 }

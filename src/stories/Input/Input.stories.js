@@ -6,15 +6,12 @@ export default {
 		variant: {
 			options: ['email', 'name', 'password', 'phone', 'search', 'text'],
 			control: { type: 'select' },
-			defaultValue: 'text'
 		},
 		disable: {
 			control: { type: 'boolean' },
-			defaultValue: 'false'
 		},
 		visibility: {
 			control: { type: 'boolean' },
-			defaultValue: 'false'
 		},
 		content: {
 			control: { type: 'text' },
@@ -22,19 +19,12 @@ export default {
 		},
 		placeholder: {
 			control: { type: 'text' },
-			defaultValue: 'Digite o texto aqui'
-		},
-		message: {
-			control: { type: 'boolean' },
-			defaultValue: 'false'
 		},
 		error: {
 			control: { type: 'boolean' },
-			defaultValue: 'false'
 		},
 		messageText: {
 			control: { type: 'text' },
-			defaultValue: 'Mensagem'
 		},
   },
 }
@@ -44,20 +34,19 @@ export const BasicInput = ({
 	disable,
 	visibility, 
 	content, 
-	placeholder, 
-	message, 
+	placeholder,
 	error, 
 	messageText
 }) => `
 	<div class="
 		input
-		variant--${variant}
+		variant--${variant || 'text'}
 		${disable ? 'disable' : ''}
 	">
 		<span></span>
 		<input 
 			type="${variant === 'password' && !!!visibility ? 'password' : 'text'}" 
-			placeholder="${placeholder}" 
+			placeholder="${placeholder || 'Digite o texto aqui'}" 
 			value="${content}"
 			${disable ? 'readonly' : ''}
 		/>
@@ -68,8 +57,8 @@ export const BasicInput = ({
 	</div>
 	<p class="
 		message
-		${error || message ? 'active' : 'deactive'}
-		${error ? 'error' : (message ? 'notify' : '')}
+		${messageText && messageText !== '' ? 'active' : 'deactive'}
+		${error ? 'error' : 'notify'}
 	">
 		${messageText}
 	</p>

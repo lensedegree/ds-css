@@ -7,7 +7,6 @@ export default {
 		variant: {
 			options: ['default', 'basic', 'extended'],
 			control: { type: 'radio' },
-			defaultValue: 'default',
 		},
 		page: {
 			control: { type: 'number' },
@@ -19,6 +18,10 @@ export default {
 }
 
 export const Pagination = ({ variant, page, nPages }) => {
+	variant = variant ?? 'default'
+	page = page ?? 1
+	nPages = nPages ?? 258
+
 	if(variant === 'default') {
 		return `
 			<div class="

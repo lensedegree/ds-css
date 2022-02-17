@@ -6,12 +6,10 @@ export default {
 		alignment: {
 			options: ['vertical', 'horizontal'],
 			control: { type: 'radio' },
-			defaultValue: 'horizontal'
 		},
 		size: {
 			options: ['small', 'medium'],
 			control: { type: 'radio' },
-			defaultValue: 'medium'
 		}
 	},
 }
@@ -19,17 +17,17 @@ export default {
 export const RadioButton = ({ alignment, size }) => `
 	<div class="
 		radio-button
-		alignment--${alignment}
-		size--${size}
+		alignment--${alignment || 'horizontal'}
+		size--${size || 'medium'}
 	">
 		<span>
 			<input type="radio" name="radio_test" value="css">
-			<label for="css">CSS</label><br>
+			<label for="css">CSS</label>
 		</span>
 
 		<span>
 			<input type="radio" name="radio_test" value="webcomponents" checked>
-			<label for="webcomponents">Web Components</label><br>
+			<label for="webcomponents">Web Components</label>
 		</span>
 
 		<span>

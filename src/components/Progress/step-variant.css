@@ -20,8 +20,6 @@
 
 .progress > .step.variant--current {
 	border-top-color: var(--color-primary-01);
-	/* FIXME: O ideal é a bordar ser cinza no atual? (significando que ainda
-	não foi concluído) */
 }
 
 .progress > .step.variant--current > div > span {

@@ -6,17 +6,14 @@ export default {
 		shape: {
 			options: ['square', 'circle'],
 			control: { type: 'radio' },
-			defaultValue: 'square'
 		},
 		size: {
 			options: ['small', 'medium'],
 			control: { type: 'radio' },
-			defaultValue: 'medium'
 		},
 		variant: {
 			options: ['outlined', 'filled'],
 			control: { type: 'radio' },
-			defaultValue: 'filled'
 		},
 	},
 }
@@ -24,9 +21,9 @@ export default {
 export const IconShape = ({ shape, size, variant }) => `
 	<div class="
 		icon-shape
-		shape--${shape}
-		size--${size}
-		variant--${variant}
+		shape--${shape || 'square'}
+		size--${size || 'medium'}
+		variant--${variant || 'filled'}
 	">
 		<span class="material-icons-outlined md-20">
 			file_download

@@ -6,7 +6,6 @@ export default {
 		variant: {
 			options: ['default', 'container'],
 			control: { type: 'radio' },
-			defaultValue: 'default'
 		}
 	}
 }
@@ -14,7 +13,7 @@ export default {
 export const Tabs = ({ variant }) => `
 	<div class="
 		tabs
-		variant--${variant}
+		variant--${variant || 'default'}
 	">
 		<div class="
 			tabs-header

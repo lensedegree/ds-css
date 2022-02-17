@@ -19,8 +19,18 @@
 	filter: invert();
 }
 
-.toast.variant--alert > span:last-child > hr {
+.toast.variant--alert > span:nth-child(2) > hr {
 	border-bottom-color: var(--surface-color-11);
+	opacity: 25%;
+}
+
+.toast.variant--alert > span:last-child > hr {
+	width: calc(100% - var(--spacing-xxxsm) - var(--spacing-xxxsm));
+	position: absolute;
+	bottom: var(--spacing-xxxsm);
+	border-bottom-color: var(--surface-color-11);
+	animation-name: timeline-decrease;
+	animation-duration: 10s;
 }
 
 /*
@@ -44,8 +54,18 @@
 	filter: invert();
 }
 
-.toast.variant--confirmation > span:last-child > hr {
+.toast.variant--confirmation > span:nth-child(2) > hr {
 	border-bottom-color: var(--surface-color-11);
+	opacity: 25%;
+}
+
+.toast.variant--confirmation > span:last-child > hr {
+	width: calc(100% - var(--spacing-xxxsm) - var(--spacing-xxxsm));
+	position: absolute;
+	bottom: var(--spacing-xxxsm);
+	border-bottom-color: var(--surface-color-11);
+	animation-name: timeline-decrease;
+	animation-duration: 10s;
 }
 
 /*
@@ -86,6 +106,16 @@
 		contrast(73%);
 }
 
-.toast.variant--information > span:last-child > hr {
+.toast.variant--information > span:nth-child(2) > hr {
 	border-bottom-color: var(--surface-color-07);
+	opacity: 25%;
+}
+
+.toast.variant--information > span:last-child > hr {
+	width: calc(100% - var(--spacing-xxxsm) - var(--spacing-xxxsm));
+	position: absolute;
+	bottom: var(--spacing-xxxsm);
+	border-bottom-color: var(--surface-color-07);
+	animation-name: timeline-decrease;
+	animation-duration: 10s;
 }

@@ -38,6 +38,7 @@
 	filter: invert();
 }
 
+.toast.variant--reward > span:nth-child(2),
 .toast.variant--reward > span:last-child {
 	display: none;
 }

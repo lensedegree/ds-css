@@ -6,7 +6,6 @@ export default {
 		active: {
 			options: ['deactive', 'active'],
 			control: { type: 'radio' },
-			defaultValue: 'active',
 		}
 	}
 }
@@ -21,7 +20,7 @@ export const Overflow = ({ active }) => `
 	<div class="
 		overflow
 		options
-		${active}
+		${active || 'deactive'}
 	">
 		<option>Option 1</option>
 		<a href="#"><option>Option 2</option></a>

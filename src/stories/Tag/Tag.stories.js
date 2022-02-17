@@ -1,26 +1,24 @@
-import '../../components/Tags/index.css'
+import '../../components/Tag/index.css'
 
 export default {
-	title: 'Base Components/Tags',
+	title: 'Base Components/Tag',
 	argTypes: {
 		variant: {
 			options: ['selection', 'filter'],
 			control: { type: 'radio' },
-			defaultValue: 'selection',
 		},
 		content: {
 			control: { type: 'text' },
-			defaultValue: 'Tag'
 		}
 	}
 }
 
-export const Tags = ({ variant, content }) => `
+export const Tag = ({ variant, content }) => `
 	<div class="
-		tags
-		variant--${variant}
+		tag
+		variant--${variant || 'selection'}
 	">
-		<p>${content}</p>
+		<p>${content || 'Overlens'}</p>
 		<div>
 			<span></span>
 		</div>

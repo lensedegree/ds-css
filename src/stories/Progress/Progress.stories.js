@@ -6,22 +6,18 @@ export default {
 		variant: {
 			options: ['mobile', 'desktop'],
 			control: { type: 'radio' },
-			defaultValue: 'desktop',
 		},
 		state: {
-			options: ['pass', 'error'],
+			options: ['current', 'error'],
 			control: { type: 'radio' },
-			defaultValue: 'pass',
 		}
 	}
 }
 
-/* FIXME: Progress deveria ter width 100%? */
-
 export const ProgressIndicator = ({ variant, state }) => `
 	<div class="
 		progress
-		variant--${variant}
+		variant--${variant || 'desktop'}
 	">
 		<div class="
 			step
@@ -47,7 +43,7 @@ export const ProgressIndicator = ({ variant, state }) => `
 
 		<div class="
 			step
-			variant--${state === 'pass' ? 'current' : 'error'}
+			variant--${state === 'error' ? 'error' : 'current'}
 		">
 			<div>
 				<hr />

@@ -6,7 +6,6 @@ export default {
 		active: {
 			options: ['deactive', 'active'],
 			control: { type: 'radio' },
-			defaultValue: 'deactive'
 		}
 	},
 }
@@ -14,7 +13,7 @@ export default {
 export const ToggleButton = ({ active }) => `
 	<div class="
 		toggle-button
-		${active}
+		${active || 'deactive'}
 	">
 		<div class="toggle"></div>
 	</div>

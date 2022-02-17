@@ -6,16 +6,13 @@ export default {
 		variant: {
 			options: ['basic', 'danger'],
 			control: { type: 'radio' },
-			defaultValue: 'basic'
 		},
 		size: {
 			options: ['small', 'medium', 'large'],
 			control: { type: 'radio' },
-			defaultValue: 'medium'
 		},
 		content: {
 			control: { type: 'text' },
-			defaultValue: 'Link'
 		},
   },
 }
@@ -23,7 +20,7 @@ export default {
 export const Link = ({ variant, size, content }) => `
 	<div class="
 		link
-		variant--${variant}
-		size--${size}
-	">${content}</div>
+		variant--${variant || 'basic'}
+		size--${size || 'medium'}
+	">${content || 'Link'}</div>
 `

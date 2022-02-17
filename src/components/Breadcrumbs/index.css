@@ -30,11 +30,12 @@
 
 .breadcrumbs a:last-child {
 	cursor: inherit;
-	color: var(--surface-color-07);
+	color: var(--surface-color-05);
 }
 
 .breadcrumbs.variant--primary a + span::before {
 	content: '/';
+	color: var(--surface-color-07);
 }
 
 .breadcrumbs.variant--secundary a + span {

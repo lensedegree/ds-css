@@ -6,16 +6,13 @@ export default {
     size: {
       options: ['large', 'medium', 'small'],
       control: { type: 'radio' },
-			defaultValue: 'large',
     },
     icon: {
 			options: ['false', 'true'],
       control: { type: 'boolean' },
-			defaultValue: 'true',
     },
 		content: {
 			control: { type: 'text' },
-			defaultValue: 'Button'
 		},
   },
   decorators: [(story) => `
@@ -39,7 +36,7 @@ export const Variants = ({ size, icon, content }) => {
 				button 
 				variant--basic
 			">
-				${content}
+				${content || 'Button'}
 				<span></span>
 			</button>
 		
@@ -48,7 +45,7 @@ export const Variants = ({ size, icon, content }) => {
 				variant--primary
 				size--${size ?? 'large'}
 			">
-				${content}
+				${content || 'Button'}
 				<span class="material-icons-outlined md-18">
           file_download
           <style>
@@ -64,7 +61,7 @@ export const Variants = ({ size, icon, content }) => {
 				variant--secundary
 				size--${size ?? 'large'}
 			">
-				${content}
+				${content || 'Button'}
 				<span class="material-icons-outlined md-18">
           file_download
           <style>
@@ -80,7 +77,7 @@ export const Variants = ({ size, icon, content }) => {
 				variant--tertiary
 				size--${size ?? 'large'}
 			">
-				${content}
+				${content || 'Button'}
 				<span class="material-icons-outlined md-18">
           file_download
           <style>
@@ -96,7 +93,7 @@ export const Variants = ({ size, icon, content }) => {
 				variant--danger
 				size--${size ?? 'large'}
 			">
-				${content}
+				${content || 'Button'}
 				<span class="material-icons-outlined md-18">
           file_download
           <style>
@@ -112,7 +109,7 @@ export const Variants = ({ size, icon, content }) => {
 				variant--disable
 				size--${size ?? 'large'}
 			">
-				${content}
+				${content || 'Button'}
 				<span class="material-icons-outlined md-18">
           file_download
           <style>
@@ -130,7 +127,7 @@ export const Variants = ({ size, icon, content }) => {
 			button
 			variant--basic
 		">
-			${content}
+			${content || 'Button'}
 			<span class="material-icons md-16">
 				arrow_forward
 				<style>
@@ -145,30 +142,30 @@ export const Variants = ({ size, icon, content }) => {
 			button
 			variant--primary
 			size--${size ?? 'large'}
-		">${content}</button>
+		">${content || 'Button'}</button>
 
 		<button class="
 			button
 			variant--secundary
 			size--${size ?? 'large'}
-		">${content}</button>
+		">${content || 'Button'}</button>
 
 		<button class="
 			button
 			variant--tertiary
 			size--${size ?? 'large'}
-		">${content}</button>
+		">${content || 'Button'}</button>
 
 		<button class="
 			button
 			variant--danger
 			size--${size ?? 'large'}
-		">${content}</button>
+		">${content || 'Button'}</button>
 
 		<button class="
 			button
 			variant--disable
 			size--${size ?? 'large'}
-		">${content}</button>
+		">${content || 'Button'}</button>
 	`
 }

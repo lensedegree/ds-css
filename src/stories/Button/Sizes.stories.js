@@ -6,15 +6,12 @@ export default {
     variant: {
       options: ['primary', 'secundary', 'tertiary', 'danger', 'disable'],
       control: { type: 'radio' },
-			defaultValue: 'primary',
     },
     icon: {
       control: { type: 'boolean' },
-			defaultValue: 'true',
     },
 		content: {
 			control: { type: 'text' },
-			defaultValue: 'Button'
 		},
   },
   decorators: [(story) => `
@@ -39,7 +36,7 @@ export const Sizes = ({ variant, icon, content }) => {
 				variant--${variant ?? 'primary'}
 				size--large
 			">
-				${content}
+				${content || 'Button'}
 				<span class="material-icons-outlined md-18">
           file_download
           <style>
@@ -55,7 +52,7 @@ export const Sizes = ({ variant, icon, content }) => {
 				variant--${variant ?? 'primary'}
 				size--medium
 			">
-				${content}
+				${content || 'Button'}
 				<span class="material-icons-outlined md-18">
           file_download
           <style>
@@ -71,7 +68,7 @@ export const Sizes = ({ variant, icon, content }) => {
 				variant--${variant ?? 'primary'}
 				size--small
 			">
-				${content}
+				${content || 'Button'}
 				<span class="material-icons-outlined md-18">
           file_download
           <style>
@@ -89,18 +86,18 @@ export const Sizes = ({ variant, icon, content }) => {
 			button
 			variant--${variant ?? 'primary'}
 			size--large
-		">${content}</button>
+		">${content || 'Button'}</button>
 
 		<button class="
 			button
 			variant--${variant ?? 'primary'}
 			size--medium
-		">${content}</button>
+		">${content || 'Button'}</button>
 
 		<button class="
 			button
 			variant--${variant ?? 'primary'}
 			size--small
-		">${content}</button>
+		">${content || 'Button'}</button>
 	`
 }

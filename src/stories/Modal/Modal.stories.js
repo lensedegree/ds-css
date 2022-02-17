@@ -7,12 +7,13 @@ export default {
 		variant: {
 			options: ['alert', 'confirmation'],
 			control: { type: 'radio' },
-			defaultValue: 'confirmation',
 		},
 		format: {
 			options: ['mobile', 'desktop'],
 			control: { type: 'radio' },
-			defaultValue: 'desktop',
+		},
+		acceptText: {
+			control: { type: 'text' },
 		},
   },
 	// decorators: [(story) => `
@@ -22,16 +23,13 @@ export default {
   //     ${story()}
   //   </div>
   // `],
-	/* FIXME: Botões fluidos quebram o modal, quando esse é pequeno.
-		 Nos testes: desktop < 400px e mobile < 355px
-	*/
 }
 
-export const Modal = ({ variant, format }) => `
+export const Modal = ({ variant, format, acceptText }) => `
 	<div class="
 		modal
-		variant--${variant}
-		format--${format}
+		variant--${variant || 'confirmation'}
+		format--${format || 'desktop'}
 	">
 		<span>
 			<span>
@@ -46,15 +44,15 @@ export const Modal = ({ variant, format }) => `
 			<button class="
 				button
 				variant--${variant === 'alert' ? 'danger' : 'primary'}
-				size--${format === 'desktop' ? 'large' : 'medium'}
+				size--medium
 			">
-				${variant === 'alert' ? 'Deletar' : 'Mesclar'}
+				${acceptText || 'Mesclar'}
 			</button>
 
 			<button class="
 				button
 				variant--tertiary
-				size--${format === 'desktop' ? 'large' : 'medium'}
+				size--medium
 			">
 				Cancelar
 			</button>

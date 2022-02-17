@@ -6,20 +6,16 @@ export default {
     variant: {
       options: ['basic', 'primary', 'secundary', 'tertiary', 'danger', 'disable'],
       control: { type: 'radio' },
-			defaultValue: 'primary',
     },
     size: {
       options: ['large', 'medium', 'small'],
       control: { type: 'radio' },
-			defaultValue: 'large',
     },
     icon: {
       control: { type: 'boolean' },
-			defaultValue: 'true',
     },
 		content: {
 			control: { type: 'text' },
-			defaultValue: 'Button'
 		},
   },
 }
@@ -31,7 +27,7 @@ export const Button = ({ variant, size, icon, content }) => {
         button
         variant--basic
       ">
-        ${content}
+        ${content || 'Button'}
         <span></span>
       </button>
     `
@@ -44,7 +40,7 @@ export const Button = ({ variant, size, icon, content }) => {
         variant--${variant ?? 'primary'}
         size--${size ?? 'large'}
       ">
-        ${content}
+        ${content || 'Button'}
         <span class="material-icons-outlined md-18">
           file_download
           <style>
@@ -62,6 +58,6 @@ export const Button = ({ variant, size, icon, content }) => {
       button
       variant--${variant ?? 'primary'}
       size--${size ?? 'large'}
-    ">${content}</button>
+    ">${content || 'Button'}</button>
   `
 }

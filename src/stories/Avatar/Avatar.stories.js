@@ -7,15 +7,25 @@ export default {
 		size: {
 			options: ['large', 'medium', 'small'],
 			control: { type: 'radio' },
-			defaultValue: 'medium'
+		},
+		notifications: {
+			control: { type: 'number' },
+		},
+		state: {
+			options: ['offline', 'online', 'hidden'],
+			control: { type: 'radio' },
+		},
+		action: {
+			options: ['edit', 'add', 'delete', 'hidden'],
+			control: { type: 'radio' },
 		},
 	},
 }
 
-export const Basic = ({ size }) => `
+export const Basic = ({ size, notifications, state, action }) => `
 	<div class="
 		avatar-container
-		size--${size}
+		size--${size || 'medium'}
 	">
 		<div class="
 			avatar
@@ -23,13 +33,13 @@ export const Basic = ({ size }) => `
 			<img src="${imageFile}" />
 		</div>
 		<div class="
-			state--notify
-		">2</div>
+			state--${!!!notifications || notifications < 1 ? 'hidden' : 'notify'}
+		">${notifications}</div>
 		<div class="
-			state--hidden
+			state--${state || 'hidden'}
 		"></div>
 		<div class="
-			action--edit
+			action--${action || 'hidden'}
 		">
 			<span></span>
 		</div>
