@@ -1,7 +1,7 @@
 {
-  "name": "@lensedegree/ds-css",
-  "version": "0.0.0-alpha.4",
-  "description": "Design system desenvolvido para ser utilizado nos sistemas da Lense Degree",
+  "name": "@overlens/ds-css",
+  "version": "0.0.0-alpha.1",
+  "description": "Biblioteca para CSS desenvolvida a partir do Design System da Overlens",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,20 +10,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lensedegree/ds-css.git"
+    "url": "git+https://github.com/overlens/ds-css.git"
   },
   "keywords": [
-    "Lense Degree",
+    "Overlens",
     "Design System",
-    "CSS",
-    "Cascading Style Sheets"
+    "CSS"
   ],
-  "author": "Lense Degree <contato@lensedegree.com> (http://lensedegree.com)",
+  "author": "Overlens <> ()",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/lensedegree/ds-css/issues"
+    "url": "https://github.com/overlens/ds-css/issues"
   },
-  "homepage": "https://github.com/lensedegree/ds-css#readme",
+  "homepage": "https://github.com/overlens/ds-css#readme",
   "devDependencies": {
     "@babel/core": "^7.16.7",
     "@storybook/addon-actions": "^6.4.12",

@@ -22,5 +22,7 @@ export const Link = ({ variant, size, content }) => `
 		link
 		variant--${variant || 'basic'}
 		size--${size || 'medium'}
-	">${content || 'Link'}</div>
+	">
+		${content || 'Link'}
+	</div>
 `

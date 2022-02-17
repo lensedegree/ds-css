@@ -17,7 +17,7 @@ export default {
 export const RadioButton = ({ alignment, size }) => `
 	<div class="
 		radio-button
-		alignment--${alignment || 'horizontal'}
+		alignment--${alignment || 'vertical'}
 		size--${size || 'medium'}
 	">
 		<span>

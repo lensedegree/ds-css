@@ -17,6 +17,15 @@ export default {
       flex-direction: column;
 			align-items: center;
     ">
+			<span class="material-icons md-20">
+				info
+				<style>
+					.material-icons.md-20 {
+						font-size: 20px;
+						color: #959595;
+					}
+				</style>
+			</span>
       ${story()}
     </div>
   `]
@@ -25,21 +34,6 @@ export default {
 /* TODO: Testar melhor, com outros botões */
 
 export const Tooltip = ({ variant, link }) => `
-	${
-		variant === 'click'
-		? `
-		<span class="material-icons md-20">
-			info
-			<style>
-				.material-icons.md-20 {
-					font-size: 20px;
-					color: #959595;
-				}
-			</style>
-		</span>
-		`
-		: ''
-	}
 	<div class="
 		tooltip-container
 		variant--${variant || 'definition'}

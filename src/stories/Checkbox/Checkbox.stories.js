@@ -22,7 +22,7 @@ export const Checkbox = ({ variant, alignment, size }) => `
 	<div class="
 		checkbox
 		variant--${variant || 'basic'}
-		alignment--${alignment || 'horizontal'}
+		alignment--${alignment || 'vertical'}
 		size--${size || 'medium'}
 	">
 		<span>

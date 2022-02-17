@@ -16,7 +16,7 @@ jobs:
         with:
           node-version: 14
           registry-url: https://registry.npmjs.org/
-          scope: '@lensedegree'
+          scope: '@overlens'
       - name: Publish package on NPM
         run: npm publish --access public
         env:
@@ -33,7 +33,7 @@ jobs:
         with:
           node-version: 14
           registry-url: https://npm.pkg.github.com/
-          scope: '@lensedegree'
+          scope: '@overlens'
       - name: Publish package on Github Packages
         run: npm publish
         env:
