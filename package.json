@@ -1,6 +1,6 @@
 {
   "name": "@overlens/ds-css",
-  "version": "0.0.0-alpha.2",
+  "version": "0.0.0-alpha.8",
   "description": "Biblioteca para CSS desenvolvida a partir do Design System da Overlens",
   "main": "index.js",
   "scripts": {
