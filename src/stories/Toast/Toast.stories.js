@@ -52,8 +52,6 @@ export const Toast = ({ variant, format }) => `
 		</span>
 
 		<span><hr /></span>
-		<span class=" 
-      timeline-animated
-    "><hr /></span>
+		<span><hr /></span>
 	</div>
 `

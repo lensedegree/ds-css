@@ -1,18 +1,18 @@
-.input + .message.deactive {
+.input + .input-message.deactive {
 	display: none;
 }
 
-.input + .message.active {
+.input + .input-message.active {
 	margin-top: var(--spacing-mini);
 	font-family: var(--font-family-02);
 	font-size: var(--font-size-weeny);
 	line-height: var(--line-height-medium);
 }
 
-.input + .message.active.notify {
+.input + .input-message.active.notify {
 	color: var(--color-primary-01);
 }
 
-.input + .message.active.error {
+.input + .input-message.active.error {
 	color: var(--color-secundary-03);
 }

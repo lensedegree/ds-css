@@ -42,6 +42,7 @@ export const BasicInput = ({
 		input
 		variant--${variant || 'text'}
 		${disable ? 'disable' : ''}
+		${error ? 'error' : ''}
 	">
 		<span></span>
 		<input 
@@ -56,7 +57,7 @@ export const BasicInput = ({
 		"></span>
 	</div>
 	<p class="
-		message
+		input-message
 		${messageText && messageText !== '' ? 'active' : 'deactive'}
 		${error ? 'error' : 'notify'}
 	">
