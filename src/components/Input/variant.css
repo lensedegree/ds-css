@@ -3,6 +3,13 @@
 	height: 20px;
 	margin-right: var(--spacing-weeny);
 	content: url('../../assets/email_black_24dp.svg');
+	filter: 
+		invert(28%) 
+		sepia(17%) 
+		saturate(0%) 
+		hue-rotate(189deg) 
+		brightness(104%) 
+		contrast(96%);
 }
 
 .input.variant--name > span:first-child {
@@ -10,6 +17,13 @@
 	height: 20px;
 	margin-right: var(--spacing-weeny);
 	content: url('../../assets/emoji_emotions_black_24dp.svg');
+	filter: 
+		invert(28%) 
+		sepia(17%) 
+		saturate(0%) 
+		hue-rotate(189deg) 
+		brightness(104%) 
+		contrast(96%);
 }
 
 .input.variant--password > span:first-child {
@@ -17,6 +31,13 @@
 	height: 20px;
 	margin-right: var(--spacing-weeny);
 	content: url('../../assets/lock_black_24dp.svg');
+	filter: 
+		invert(28%) 
+		sepia(17%) 
+		saturate(0%) 
+		hue-rotate(189deg) 
+		brightness(104%) 
+		contrast(96%);
 }
 
 .input.variant--password > span.show:last-child {
@@ -24,6 +45,13 @@
 	height: 20px;
 	margin-right: var(--spacing-weeny);
 	content: url('../../assets/visibility_black_24dp.svg');
+	filter: 
+		invert(28%) 
+		sepia(17%) 
+		saturate(0%) 
+		hue-rotate(189deg) 
+		brightness(104%) 
+		contrast(96%);
 	cursor: pointer;
 }
 
@@ -32,6 +60,13 @@
 	height: 20px;
 	margin-right: var(--spacing-weeny);
 	content: url('../../assets/visibility_off_black_24dp.svg');
+	filter: 
+		invert(28%) 
+		sepia(17%) 
+		saturate(0%) 
+		hue-rotate(189deg) 
+		brightness(104%) 
+		contrast(96%);
 	cursor: pointer;
 }
 
@@ -40,6 +75,13 @@
 	height: 20px;
 	margin-right: var(--spacing-weeny);
 	content: url('../../assets/phone_iphone_black_24dp.svg');
+	filter: 
+		invert(28%) 
+		sepia(17%) 
+		saturate(0%) 
+		hue-rotate(189deg) 
+		brightness(104%) 
+		contrast(96%);
 }
 
 .input.variant--search > span:first-child {
@@ -47,6 +89,13 @@
 	height: 20px;
 	margin-right: var(--spacing-weeny);
 	content: url('../../assets/search_black_24dp.svg');
+	filter: 
+		invert(28%) 
+		sepia(17%) 
+		saturate(0%) 
+		hue-rotate(189deg) 
+		brightness(104%) 
+		contrast(96%);
 }
 
 .input.variant--search > span:last-child.deactive {
@@ -58,6 +107,13 @@
 	height: 20px;
 	margin-right: var(--spacing-weeny);
 	content: url('../../assets/clear_black_24dp.svg');
+	filter: 
+		invert(28%) 
+		sepia(17%) 
+		saturate(0%) 
+		hue-rotate(189deg) 
+		brightness(104%) 
+		contrast(96%);
 	cursor: pointer;
 }
 

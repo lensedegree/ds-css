@@ -23,7 +23,6 @@
 	cursor: inherit;
 	background-color: var(--surface-color-09);
 	cursor: not-allowed;
-	/* FIXME: Quando desabilitado, configurar o cursor para not-allowed? */
 }
 
 .input.error {

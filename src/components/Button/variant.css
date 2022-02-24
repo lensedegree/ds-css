@@ -39,12 +39,17 @@
 	color: var(--surface-color-11);
 	border: 1px solid var(--surface-color-00);
 }
+.button.variant--secundary.invert {
+	background: var(--surface-color-11);
+	color: var(--surface-color-00);
+	border: 1px solid var(--surface-color-11);
+}
 .button.variant--secundary:hover {
 	opacity: 90%;
 }
 
 .button.variant--tertiary {
-	background: none;
+	background: var(--surface-color-11);
 	color: var(--surface-color-02);
 	border: 1px solid var(--surface-color-02);
 }
