@@ -1,0 +1,41 @@
+.textarea-input {
+	background-color: var(--surface-color-10);
+	border-color: var(--surface-color-10);
+}
+
+.textarea-input > textarea {
+	background-color: var(--surface-color-10);
+	color: var(--surface-color-05);
+}
+
+.textarea-input > textarea:focus-within {
+	border-color: var(--color-primary-01);
+}
+
+.textarea-input > textarea:focus-within {
+	border-color: var(--color-primary-01);
+}
+
+.textarea-input.theme--yellow-lens > textarea:focus-within {
+	border-color: var(--color-secundary-01);
+}
+
+.textarea-input.theme--green-lens > textarea:focus-within {
+	border-color: var(--color-secundary-02);
+}
+
+.textarea-input.theme--red-lens > textarea:focus-within {
+	border-color: var(--color-secundary-03);
+}
+
+.textarea-input.theme--purple-lens > textarea:focus-within {
+	border-color: var(--color-secundary-04);
+}
+
+.textarea-input.theme--orange-lens > textarea:focus-within {
+	border-color: var(--color-secundary-05);
+}
+
+.textarea-input.theme--lime-lens > textarea:focus-within {
+	border-color: var(--color-secundary-06);
+}

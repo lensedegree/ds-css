@@ -1,0 +1,56 @@
+.icon-shape {
+	border-color: var(--color-primary-01);
+}
+
+.icon-shape.theme--yellow-lens {
+	border-color: var(--color-secundary-01);
+}
+
+.icon-shape.theme--green-lens {
+	border-color: var(--color-secundary-02);
+}
+
+.icon-shape.theme--red-lens {
+	border-color: var(--color-secundary-03);
+}
+
+.icon-shape.theme--purple-lens {
+	border-color: var(--color-secundary-04);
+}
+
+.icon-shape.theme--orange-lens {
+	border-color: var(--color-secundary-05);
+}
+
+.icon-shape.theme--lime-lens {
+	border-color: var(--color-secundary-06);
+}
+
+.icon-shape.variant--filled {
+	background-color: var(--color-primary-01);
+	color: var(--surface-color-11);
+}
+
+.icon-shape.variant--filled.theme--yellow-lens {
+	background-color: var(--color-secundary-01);
+}
+
+.icon-shape.variant--filled.theme--green-lens {
+	background-color: var(--color-secundary-02);
+}
+
+.icon-shape.variant--filled.theme--red-lens {
+	background-color: var(--color-secundary-03);
+}
+
+.icon-shape.variant--filled.theme--purple-lens {
+	background-color: var(--color-secundary-04);
+}
+
+.icon-shape.variant--filled.theme--orange-lens {
+	background-color: var(--color-secundary-05);
+}
+
+.icon-shape.variant--filled.theme--lime-lens {
+	background-color: var(--color-secundary-06);
+}

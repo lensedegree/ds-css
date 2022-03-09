@@ -6,14 +6,27 @@ export default {
 		variant: {
 			options: ['default', 'container'],
 			control: { type: 'radio' },
+		},
+		theme: {
+			options: [
+				'morpho-blue', 
+				'yellow-lens', 
+				'green-lens', 
+				'red-lens', 
+				'purple-lens',
+				'orange-lens',
+				'lime-lens'
+			],
+			control: { type: 'select' }
 		}
 	}
 }
 
-export const Tabs = ({ variant }) => `
+export const Tabs = ({ variant, theme }) => `
 	<div class="
 		tabs
 		variant--${variant || 'default'}
+		theme--${theme}
 	">
 		<div class="
 			tabs-header

@@ -1,3 +1,5 @@
+@import url('./theme.css');
+
 .breadcrumbs * {
 	margin: 0;
 	padding: 0;
@@ -24,13 +26,11 @@
 
 .breadcrumbs a {
 	text-decoration: none;
-	color: var(--color-primary-01);
 	cursor: pointer;
 }
 
 .breadcrumbs a:last-child {
 	cursor: inherit;
-	color: var(--surface-color-05);
 }
 
 .breadcrumbs.variant--primary a + span::before {

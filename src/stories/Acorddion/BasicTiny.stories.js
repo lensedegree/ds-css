@@ -13,6 +13,18 @@ export default {
 		body: {
 			control: { type: 'text' },
 		},
+		theme: {
+			options: [
+				'morpho-blue', 
+				'yellow-lens', 
+				'green-lens', 
+				'red-lens', 
+				'purple-lens',
+				'orange-lens',
+				'lime-lens'
+			],
+			control: { type: 'select' }
+		}
 	},
   decorators: [(story) => `
     <div style="
@@ -26,8 +38,11 @@ export default {
 const defaultTitle = 'Qual é a diferença entre a Maratona Guidelines e o Grid'
 const defaultBody = 'O acordeão oferece grandes quantidades de conteúdo em um pequeno espaço por meio de divulgação progressiva.'
 
-export const BasicTiny = ({ active, title, body }) => `
-	<div class="acorddion">
+export const BasicTiny = ({ active, title, body, theme }) => `
+	<div class="
+		acorddion
+		theme--${theme}
+	">
 		<div class="
 			acorddion-title
 			variant--basic

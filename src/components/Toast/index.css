@@ -2,6 +2,7 @@
 @import url('./variant.css');
 @import url('./format.css');
 @import url('./reward.css');
+@import url('./theme.css');
 
 .toast * {
 	margin: 0;

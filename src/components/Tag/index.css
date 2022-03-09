@@ -1,3 +1,5 @@
+@import url('./theme.css');
+
 .tag * {
 	margin: 0;
 	padding: 0;
@@ -7,12 +9,10 @@
 .tag {
 	display: inline-flex;
 	align-items: center;
-	background: var(--color-primary-01);
 	border-radius: 9999px;
 	font-family: var(--font-family-02);
 	font-size: var(--font-size-zee);
 	line-height: var(--line-height-medium);
-	color: var(--surface-color-11);
 }
 
 .tag > p {

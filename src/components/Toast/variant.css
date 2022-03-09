@@ -38,10 +38,6 @@
  * Confirmation Toast
  */
 
-.toast.variant--confirmation {
-	background-color: var(--color-primary-01);
-}
-
 .toast.variant--confirmation * {
 	color: var(--surface-color-11); 
 }

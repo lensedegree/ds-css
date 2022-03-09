@@ -1,3 +1,5 @@
+@import url('./theme.css');
+
 .toggle-button * {
 	margin: 0;
 	padding: 0;
@@ -15,27 +17,22 @@
 	cursor: pointer;
 }
 
-.toggle-button.deactive {
-	background-color: var(--surface-color-09);
-}
-
 .toggle-button.active {
 	justify-content: flex-end;
-	background-color: var(--color-primary-01);
 }
 
 .toggle-button.deactive .toggle {
 	width: 20px;
 	height: 20px;
-	border: 1px solid var(--surface-color-09);
-	background-color: var(--surface-color-11);
+	border-width: 1px;
+	border-style: solid;
 	border-radius: 9999px;
 }
 
 .toggle-button.active .toggle {
 	width: 20px;
 	height: 20px;
-	border: 1px solid var(--color-primary-01);
-	background-color: var(--surface-color-11);
+	border-width: 1px;
+	border-style: solid;
 	border-radius: 9999px;
 }

@@ -1,6 +1,7 @@
 @import url('./alignment.css');
 @import url('./size.css');
 @import url('./variant.css');
+@import url('./theme.css');
 
 .checkbox * {
 	margin: 0;
@@ -9,7 +10,6 @@
 }
 
 .checkbox {
-	color: var(--surface-color-02);
 	font-family: var(--font-family-02);
 }
 

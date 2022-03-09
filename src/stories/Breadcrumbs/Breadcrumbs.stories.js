@@ -7,13 +7,26 @@ export default {
 			options: ['primary', 'secundary'],
 			control: { type: 'radio' },
 		},
+		theme: {
+			options: [
+				'morpho-blue', 
+				'yellow-lens', 
+				'green-lens', 
+				'red-lens', 
+				'purple-lens',
+				'orange-lens',
+				'lime-lens'
+			],
+			control: { type: 'select' }
+		}
 	},
 }
 
-export const Breadcrumbs = ({ variant }) => `
+export const Breadcrumbs = ({ variant, theme }) => `
 	<div class="
 		breadcrumbs
 		variant--${variant || 'primary'}
+		theme--${theme}
 	">
 		<a>Breadcrumb 1</a>
 		

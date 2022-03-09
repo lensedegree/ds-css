@@ -15,6 +15,18 @@ export default {
 		acceptText: {
 			control: { type: 'text' },
 		},
+		theme: {
+			options: [
+				'morpho-blue', 
+				'yellow-lens', 
+				'green-lens', 
+				'red-lens', 
+				'purple-lens',
+				'orange-lens',
+				'lime-lens'
+			],
+			control: { type: 'select' }
+		}
   },
 	// decorators: [(story) => `
   //   <div style="
@@ -25,7 +37,7 @@ export default {
   // `],
 }
 
-export const Modal = ({ variant, format, acceptText }) => `
+export const Modal = ({ variant, format, acceptText, theme }) => `
 	<div class="
 		modal
 		variant--${variant || 'confirmation'}
@@ -45,6 +57,7 @@ export const Modal = ({ variant, format, acceptText }) => `
 				button
 				variant--${variant === 'alert' ? 'danger' : 'primary'}
 				size--medium
+        theme--${theme}
 			">
 				${acceptText || 'Mesclar'}
 			</button>

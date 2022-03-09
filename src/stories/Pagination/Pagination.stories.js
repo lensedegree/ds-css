@@ -14,10 +14,22 @@ export default {
 		nPages: {
 			control: { type: 'number' },
 		},
+		theme: {
+			options: [
+				'morpho-blue', 
+				'yellow-lens', 
+				'green-lens', 
+				'red-lens', 
+				'purple-lens',
+				'orange-lens',
+				'lime-lens'
+			],
+			control: { type: 'select' }
+		}
 	}
 }
 
-export const Pagination = ({ variant, page, nPages }) => {
+export const Pagination = ({ variant, page, nPages, theme }) => {
 	variant = variant ?? 'default'
 	page = page ?? 1
 	nPages = nPages ?? 258
@@ -27,12 +39,14 @@ export const Pagination = ({ variant, page, nPages }) => {
 			<div class="
 				pagination
 				variant--default
+				theme--${theme}
 			">
 				<div class="
 					icon-shape
 					shape--circle
 					size--medium
 					variant--outlined
+					theme--${theme}
 				">
 					<span class="material-icons-outlined md-24">
 						arrow_back
@@ -49,6 +63,7 @@ export const Pagination = ({ variant, page, nPages }) => {
 					shape--circle
 					size--medium
 					variant--outlined
+					theme--${theme}
 				">
 					<span class="material-icons-outlined md-24">
 						arrow_forward
@@ -70,6 +85,7 @@ export const Pagination = ({ variant, page, nPages }) => {
 			<div class="
 				pagination
 				variant--basic
+				theme--${theme}
 			">
 				<div><span></span></div>
 				<div><input value="${page}" /></div>
@@ -91,6 +107,7 @@ export const Pagination = ({ variant, page, nPages }) => {
 			<div class="
 				pagination
 				variant--extended
+				theme--${theme}
 			">
 				<div>
 					<span></span>
@@ -153,6 +170,7 @@ export const Pagination = ({ variant, page, nPages }) => {
 			<div class="
 				pagination
 				variant--extended
+				theme--${theme}
 			">
 				<div>
 					<span></span>
@@ -193,6 +211,7 @@ export const Pagination = ({ variant, page, nPages }) => {
 			<div class="
 				pagination
 				variant--extended
+				theme--${theme}
 			">
 				<div>
 					<span></span>
@@ -232,6 +251,7 @@ export const Pagination = ({ variant, page, nPages }) => {
 		<div class="
 			pagination
 			variant--extended
+			theme--${theme}
 		">
 			<div>
 				<span></span>

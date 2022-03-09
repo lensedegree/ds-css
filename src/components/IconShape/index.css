@@ -1,6 +1,7 @@
 @import url('./shape.css');
 @import url('./size.css');
 @import url('./variant.css');
+@import url('./theme.css');
 
 .icon-shape * {
 	margin: 0;

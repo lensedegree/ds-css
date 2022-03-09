@@ -14,16 +14,30 @@ export default {
 		size: {
 			options: ['small', 'medium'],
 			control: { type: 'radio' },
+		},
+		theme: {
+			options: [
+				'default',
+				'morpho-blue', 
+				'yellow-lens', 
+				'green-lens', 
+				'red-lens', 
+				'purple-lens',
+				'orange-lens',
+				'lime-lens'
+			],
+			control: { type: 'select' }
 		}
 	},
 }
 
-export const Checkbox = ({ variant, alignment, size }) => `
+export const Checkbox = ({ variant, alignment, size, theme }) => `
 	<div class="
 		checkbox
 		variant--${variant || 'basic'}
 		alignment--${alignment || 'vertical'}
 		size--${size || 'medium'}
+		theme--${theme}
 	">
 		<span>
 			<input type="checkbox" name="scales" />

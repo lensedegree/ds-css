@@ -40,16 +40,6 @@
 	filter: invert();
 }
 
-.acorddion .acorddion-title.variant--basic.deactive {
-	background-color: var(--surface-color-10);
-	color: var(--surface-color-06);
-}
-
-.acorddion .acorddion-title.variant--basic.active {
-	background-color: var(--color-primary-01);
-	color: var(--surface-color-11);
-}
-
 .acorddion .acorddion-title.size--tiny {
 	width: 100%;
 

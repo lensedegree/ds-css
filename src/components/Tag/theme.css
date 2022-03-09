@@ -1,0 +1,28 @@
+.tag {
+	background: var(--color-primary-01);
+	color: var(--surface-color-11);
+}
+
+.tag.theme--yellow-lens {
+	background: var(--color-secundary-01);
+}
+
+.tag.theme--green-lens {
+	background: var(--color-secundary-02);
+}
+
+.tag.theme--red-lens {
+	background: var(--color-secundary-03);
+}
+
+.tag.theme--purple-lens {
+	background: var(--color-secundary-04);
+}
+
+.tag.theme--orange-lens {
+	background: var(--color-secundary-05);
+}
+
+.tag.theme--lime-lens {
+	background: var(--color-secundary-06);
+}

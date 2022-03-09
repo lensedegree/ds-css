@@ -15,15 +15,28 @@ export default {
 			options: ['outlined', 'filled'],
 			control: { type: 'radio' },
 		},
+		theme: {
+			options: [
+				'morpho-blue', 
+				'yellow-lens', 
+				'green-lens', 
+				'red-lens', 
+				'purple-lens',
+				'orange-lens',
+				'lime-lens'
+			],
+			control: { type: 'select' }
+		}
 	},
 }
 
-export const IconShape = ({ shape, size, variant }) => `
+export const IconShape = ({ shape, size, variant, theme }) => `
 	<div class="
 		icon-shape
 		shape--${shape || 'square'}
 		size--${size || 'medium'}
 		variant--${variant || 'filled'}
+		theme--${theme}
 	">
 		<span class="material-icons-outlined md-20">
 			file_download

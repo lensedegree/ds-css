@@ -1,0 +1,23 @@
+.link.theme--yellow-lens:not(.variant--danger) {
+	color: var(--color-secundary-01);
+}
+
+.link.theme--green-lens:not(.variant--danger) {
+	color: var(--color-secundary-02);
+}
+
+.link.theme--red-lens {
+	color: var(--color-secundary-03);
+}
+
+.link.theme--purple-lens:not(.variant--danger) {
+	color: var(--color-secundary-04);
+}
+
+.link.theme--orange-lens:not(.variant--danger) {
+	color: var(--color-secundary-05);
+}
+
+.link.theme--lime-lens:not(.variant--danger) {
+	color: var(--color-secundary-06);
+}

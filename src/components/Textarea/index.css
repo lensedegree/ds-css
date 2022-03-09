@@ -1,4 +1,5 @@
 @import url('./message.css');
+@import url('./theme.css');
 
 .textarea-input * {
 	margin: 0;
@@ -9,8 +10,8 @@
 .textarea-input {
 	display: flex;
 	align-items: center;
-	background-color: var(--surface-color-10);
-	border: 1px solid var(--surface-color-10);
+	border-width: 1px;
+	border-style: solid;
 	border-radius: 4px;
 }
 
@@ -21,16 +22,15 @@
 	padding-right: var(--spacing-xxsm);
 	padding-bottom: var(--spacing-xxxsm);
 	padding-left: var(--spacing-xxsm);
-	background-color: var(--surface-color-10);
 	font-family: var(--font-family-02);
 	font-size: var(--font-size-weeny);
 	line-height: var(--line-height-medium);
-	color: var(--surface-color-05);
 	white-space: pre-wrap;
 }
 
 .textarea-input > textarea:focus-within {
-	border: 1px solid var(--color-primary-01);
+	border-width: 1px;
+	border-style: solid;
 	border-radius: 4px;
 }
 

@@ -1,5 +1,6 @@
 @import url('./alignment.css');
 @import url('./size.css');
+@import url('./theme.css');
 
 .radio-button * {
 	margin: 0;
@@ -8,7 +9,6 @@
 }
 
 .radio-button {
-	color: var(--surface-color-02);
 	font-family: var(--font-family-02);
 }
 

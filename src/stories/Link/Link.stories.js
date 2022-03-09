@@ -14,14 +14,27 @@ export default {
 		content: {
 			control: { type: 'text' },
 		},
+		theme: {
+			options: [
+				'morpho-blue', 
+				'yellow-lens', 
+				'green-lens', 
+				'red-lens', 
+				'purple-lens',
+				'orange-lens',
+				'lime-lens'
+			],
+			control: { type: 'select' }
+		}
   },
 }
 
-export const Link = ({ variant, size, content }) => `
+export const Link = ({ variant, size, content, theme }) => `
 	<div class="
 		link
 		variant--${variant || 'basic'}
 		size--${size || 'medium'}
+		theme--${theme}
 	">
 		${content || 'Link'}
 	</div>

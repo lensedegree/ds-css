@@ -10,8 +10,8 @@
 /* FIXME: O que fazer com o hover da aba? */
 
 .tabs.variant--default > .tabs-header > div.active {
-	color: var(--color-primary-01);
-	border-bottom: 2px solid var(--color-primary-01);
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
 }
 
 .tabs.variant--default > .tabs-content {
@@ -23,11 +23,6 @@
 	color: var(--surface-color-07);
 }
 /* FIXME: O que fazer com o hover da aba? */
-
-.tabs.variant--container > .tabs-header > div.active {
-	background: var(--color-primary-01);
-	color: var(--surface-color-11);
-}
 
 .tabs.variant--container > .tabs-header > div:not(.active) + div:not(.active) {
 	border-left: 2px solid var(--surface-color-08);

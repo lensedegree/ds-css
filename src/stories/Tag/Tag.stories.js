@@ -9,14 +9,27 @@ export default {
 		},
 		content: {
 			control: { type: 'text' },
+		},
+		theme: {
+			options: [
+				'morpho-blue', 
+				'yellow-lens', 
+				'green-lens', 
+				'red-lens', 
+				'purple-lens',
+				'orange-lens',
+				'lime-lens'
+			],
+			control: { type: 'select' }
 		}
 	}
 }
 
-export const Tag = ({ variant, content }) => `
+export const Tag = ({ variant, content, theme }) => `
 	<div class="
 		tag
 		variant--${variant || 'selection'}
+		theme--${theme}
 	">
 		<p>${content || 'Overlens'}</p>
 		<div>

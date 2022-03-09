@@ -1,0 +1,80 @@
+.radio-button {
+	color: var(--surface-color-02);
+}
+
+.radio-button.theme--morpho-blue input[type="radio"],
+.radio-button.theme--morpho-blue input[type="radio"]:checked {
+	filter: /* --color-primary-01 => #4673ff # 0.0 loss */
+		invert(39%) 
+		sepia(57%) 
+		saturate(4289%) 
+		hue-rotate(217deg) 
+		brightness(106%) 
+		contrast(102%);
+}
+
+.radio-button.theme--yellow-lens input[type="radio"],
+.radio-button.theme--yellow-lens input[type="radio"]:checked {
+	filter: /* --color-secundary-01 => #ffc72c #0.0 loss */
+		invert(78%) 
+		sepia(84%) 
+		saturate(2475%) 
+		hue-rotate(336deg) 
+		brightness(113%) 
+		contrast(101%);
+}
+
+.radio-button.theme--green-lens input[type="radio"],
+.radio-button.theme--green-lens input[type="radio"]:checked {
+	filter: /* --color-secundary-02 => #4b9560 # 0.1 loss */
+		invert(51%) 
+		sepia(41%) 
+		saturate(467%) 
+		hue-rotate(84deg) 
+		brightness(92%) 
+		contrast(90%);
+}
+
+.radio-button.theme--red-lens input[type="radio"],
+.radio-button.theme--red-lens input[type="radio"]:checked {
+	filter: /* --color-secundary-03 => #f9423a	 # 0.8 loss */
+		invert(32%) 
+		sepia(90%) 
+		saturate(1367%) 
+		hue-rotate(336deg) 
+		brightness(98%) 
+		contrast(100%);
+}
+
+.radio-button.theme--purple-lens input[type="radio"],
+.radio-button.theme--purple-lens input[type="radio"]:checked {
+	filter: /* --color-secundary-04 => #6638b6 # 0.1 loss */
+		invert(17%) 
+		sepia(62%) 
+		saturate(4197%) 
+		hue-rotate(257deg) 
+		brightness(93%) 
+		contrast(81%);
+}
+
+.radio-button.theme--orange-lens input[type="radio"],
+.radio-button.theme--orange-lens input[type="radio"]:checked {
+	filter: /* --color-secundary-05 => #ff7f41 # 0.0 loss */
+		invert(58%) 
+		sepia(22%) 
+		saturate(3216%) 
+		hue-rotate(333deg) 
+		brightness(108%) 
+		contrast(104%);
+}
+
+.radio-button.theme--lime-lens input[type="radio"],
+.radio-button.theme--lime-lens input[type="radio"]:checked {
+	filter: /* --color-secundary-06 => #dbe442 # 0.0 loss*/
+		invert(85%) 
+		sepia(74%) 
+		saturate(443%) 
+		hue-rotate(3deg) 
+		brightness(92%) 
+		contrast(93%);
+}

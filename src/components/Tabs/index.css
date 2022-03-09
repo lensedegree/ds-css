@@ -1,4 +1,5 @@
 @import url('./variant.css');
+@import url('./theme.css');
 
 .tabs * {
 	margin: 0;

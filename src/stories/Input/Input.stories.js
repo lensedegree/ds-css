@@ -3,6 +3,18 @@ import '../../components/Input/index.css'
 export default {
 	title: 'Base Components/Input',
   argTypes: {
+		theme: {
+			options: [
+				'morpho-blue', 
+				'yellow-lens', 
+				'green-lens', 
+				'red-lens', 
+				'purple-lens',
+				'orange-lens',
+				'lime-lens'
+			],
+			control: { type: 'select' }
+		},
 		variant: {
 			options: ['email', 'name', 'password', 'phone', 'search', 'text'],
 			control: { type: 'select' },
@@ -30,6 +42,7 @@ export default {
 }
 
 export const BasicInput = ({ 
+	theme,
 	variant,
 	disable,
 	visibility, 
@@ -43,6 +56,7 @@ export const BasicInput = ({
 		variant--${variant || 'text'}
 		${disable ? 'disable' : ''}
 		${error ? 'error' : ''}
+		theme--${theme}
 	">
 		<span></span>
 		<input 

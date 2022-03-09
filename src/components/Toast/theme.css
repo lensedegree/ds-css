@@ -1,0 +1,27 @@
+.toast.variant--confirmation {
+	background-color: var(--color-primary-01);
+}
+
+.toast.variant--confirmation.theme--yellow-lens {
+	background-color: var(--color-secundary-01);
+}
+
+.toast.variant--confirmation.theme--green-lens {
+	background-color: var(--color-secundary-02);
+}
+
+.toast.variant--confirmation.theme--red-lens {
+	background-color: var(--color-secundary-03);
+}
+
+.toast.variant--confirmation.theme--purple-lens {
+	background-color: var(--color-secundary-04);
+}
+
+.toast.variant--confirmation.theme--orange-lens {
+	background-color: var(--color-secundary-05);
+}
+
+.toast.variant--confirmation.theme--lime-lens {
+	background-color: var(--color-secundary-06);
+}

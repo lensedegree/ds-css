@@ -17,15 +17,28 @@ export default {
 		content: {
 			control: { type: 'text' },
 		},
+		theme: {
+			options: [
+				'morpho-blue', 
+				'yellow-lens', 
+				'green-lens', 
+				'red-lens', 
+				'purple-lens',
+				'orange-lens',
+				'lime-lens'
+			],
+			control: { type: 'select' }
+		}
   },
 }
 
-export const Button = ({ variant, size, icon, content }) => {
+export const Button = ({ variant, size, icon, content, theme }) => {
   if (variant === 'basic') {
     return `
       <button class="
         button
         variant--basic
+        theme--${theme}
       ">
         ${content || 'Button'}
         <span></span>
@@ -39,6 +52,7 @@ export const Button = ({ variant, size, icon, content }) => {
         button
         variant--${variant ?? 'primary'}
         size--${size ?? 'large'}
+        theme--${theme}
       ">
         ${content || 'Button'}
         <span class="material-icons-outlined md-18">
@@ -58,6 +72,7 @@ export const Button = ({ variant, size, icon, content }) => {
       button
       variant--${variant ?? 'primary'}
       size--${size ?? 'large'}
+      theme--${theme}
     ">${content || 'Button'}</button>
   `
 }

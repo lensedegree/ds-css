@@ -1,0 +1,27 @@
+.input:not(.error):not(.disable):focus-within {
+	border-color: var(--color-primary-01);
+}
+
+.input:not(.error):not(.disable):focus-within.theme--yellow-lens {
+	border-color: var(--color-secundary-01);
+}
+
+.input:not(.error):not(.disable):focus-within.theme--green-lens {
+	border-color: var(--color-secundary-02);
+}
+
+.input:not(.error):not(.disable):focus-within.theme--red-lens {
+	border-color: var(--color-secundary-03);
+}
+
+.input:not(.error):not(.disable):focus-within.theme--purple-lens {
+	border-color: var(--color-secundary-04);
+}
+
+.input:not(.error):not(.disable):focus-within.theme--orange-lens {
+	border-color: var(--color-secundary-05);
+}
+
+.input:not(.error):not(.disable):focus-within.theme--lime-lens {
+	border-color: var(--color-secundary-06);
+}

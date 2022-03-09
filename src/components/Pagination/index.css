@@ -1,16 +1,8 @@
 @import url('./variant.css');
+@import url('./theme.css');
 
 .pagination * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
-
-/*
-	FIXME:
-	- Variant Basic aceita só 2 digitos
-	- No State middle estão aparecendo 4 valores entre as reticencias
-	- Lógica do state errada, não leva em consideração o número de páginas
-	totais
-	- Na variant default o hover não está funcionando
-*/
