@@ -31,7 +31,7 @@
     "@storybook/builder-webpack5": "^6.4.22",
     "@storybook/html": "^6.4.22",
     "@storybook/manager-webpack5": "^6.4.22",
-    "babel-loader": "^8.2.5"
-  },
-  "dependencies": {}
+    "babel-loader": "^8.2.5",
+    "chromatic": "^6.5.4"
+  }
 }

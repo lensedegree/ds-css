@@ -2,3 +2,4 @@
 .storybook
 **/node_modules
 src/stories
+build-storybook.log
