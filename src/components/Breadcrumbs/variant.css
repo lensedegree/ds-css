@@ -1,0 +1,17 @@
+.breadcrumbs a + span::before {
+	content: '/';
+	color: var(--surface-color-07);
+}
+
+.breadcrumbs.variant--secundary a + span {
+	width: 12px;
+	height: 12px;
+	content: url('../../assets/navigate_next_black_24dp.svg');
+	filter: /* --surface-color-07 => #959595 */
+		invert(63%) 
+		sepia(1%) 
+		saturate(0%) 
+		hue-rotate(9deg) 
+		brightness(94%) 
+		contrast(86%); 
+}

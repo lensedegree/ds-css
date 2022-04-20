@@ -13,17 +13,19 @@ export default {
 export const Overflow = ({ active }) => `
 	<div class="
 		overflow
-		menu
-	">
-		<span></span>
-	</div>
-	<div class="
-		overflow
-		options
 		${active || 'deactive'}
 	">
-		<option>Option 1</option>
-		<a href="#"><option>Option 2</option></a>
-		<option>Option 3</option>
+		<div class="
+			overflow-icon
+		">
+			<span></span>
+		</div>
+		<div class="
+			overflow-options
+		">
+			<option>Option 1</option>
+			<option><a href="#">Option 2</a></option>
+			<option>Option 3</option>
+		</div>
 	</div>
 `

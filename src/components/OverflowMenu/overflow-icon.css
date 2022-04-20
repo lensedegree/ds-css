@@ -1,0 +1,19 @@
+.overflow .overflow-icon {
+	display: inline-flex;
+	padding-top: var(--spacing-tiny);
+	padding-right: var(--spacing-tiny);
+	padding-bottom: var(--spacing-tiny);
+	padding-left: var(--spacing-tiny);
+	background-color: var(--surface-color-10);
+}
+
+.overflow .overflow-icon:hover {
+	background-color: var(--surface-color-09);
+	cursor: pointer;
+}
+
+.overflow .overflow-icon > span {
+	width: 16px;
+	height: 16px;
+	content: url('../../assets/more_horiz_black_24dp.svg');
+}

@@ -24,11 +24,14 @@
   },
   "homepage": "https://github.com/overlens/ds-css#readme",
   "devDependencies": {
-    "@babel/core": "^7.16.7",
-    "@storybook/addon-actions": "^6.4.12",
-    "@storybook/addon-essentials": "^6.4.12",
-    "@storybook/addon-links": "^6.4.12",
-    "@storybook/html": "^6.4.12",
-    "babel-loader": "^8.2.3"
-  }
+    "@babel/core": "^7.17.9",
+    "@storybook/addon-actions": "^6.4.22",
+    "@storybook/addon-essentials": "^6.4.22",
+    "@storybook/addon-links": "^6.4.22",
+    "@storybook/builder-webpack5": "^6.4.22",
+    "@storybook/html": "^6.4.22",
+    "@storybook/manager-webpack5": "^6.4.22",
+    "babel-loader": "^8.2.5"
+  },
+  "dependencies": {}
 }

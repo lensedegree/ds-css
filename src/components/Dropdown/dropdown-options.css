@@ -1,13 +1,14 @@
-.dropdown-options.deactive {
+.dropdown .dropdown-options {
 	display: none;
 }
 
-.dropdown-options.active {
+.dropdown.active .dropdown-options {
+	display: inherit;
 	border-top: 1px solid var(--surface-color-07);
 	cursor: pointer;
 }
 
-.dropdown-options option {
+.dropdown .dropdown-options option {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -25,17 +26,17 @@
 	font-size: var(--font-size-weeny);
 	line-height: var(--line-height-medium);
 }
-.dropdown-options option:hover {
+.dropdown .dropdown-options option:hover {
 	background: var(--surface-color-09);
 }
 
-.dropdown-options option.selected {
+.dropdown .dropdown-options option.selected {
 	color: var(--surface-color-05);
 	background: var(--surface-color-09);
 	cursor: initial;
 }
 
-.dropdown-options option.selected > span:last-child {
+.dropdown .dropdown-options option.selected > span:last-child {
 	width: 14px;
 	height: 14px;
 	content: url('../../assets/done_black_24dp.svg');

@@ -32,8 +32,8 @@ export default {
 export const Link = ({ variant, size, content, theme }) => `
 	<div class="
 		link
-		variant--${variant || 'basic'}
-		size--${size || 'medium'}
+		variant--${variant}
+		size--${size}
 		theme--${theme}
 	">
 		${content || 'Link'}

@@ -5,7 +5,6 @@
 .pagination.variant--default > div:hover {
 	background-color: var(--color-primary-01);
 	color: var(--surface-color-11);
-	cursor: pointer;
 }
 
 .pagination.variant--default.theme--yellow-lens > div:hover {
@@ -36,31 +35,11 @@
  * Pagination basic
  */
 .pagination.variant--basic  {
-	display: flex;
-	align-items: center;
-	gap: 8px;
-	
-	font-family: var(--font-family-02);
-	font-size: var(--font-size-weeny);
-	line-height: var(--line-height-medium);
 	color: var(--surface-color-03);
 }
 
-.pagination.variant--basic > div:nth-child(1) > span  {
-	width: 20px;
-	height: 20px;
-	content: url('../../assets/navigate_before_black_24dp.svg');
-	cursor: pointer;
-}
-
 .pagination.variant--basic > div:nth-child(2) {
-	width: 56px;
-	height: 56px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
 	background-color: var(--surface-color-10);
-	border-radius: 9999px;
 }
 
 .pagination.variant--basic > div:nth-child(2):focus-within {
@@ -98,62 +77,17 @@
 	background-color: var(--color-secundary-06);
 }
 
-.pagination.variant--basic > div:nth-child(2) > input {
-	all: unset;
-	width: 27px;
-	text-align: center;
-}
-
-.pagination.variant--basic > div:nth-child(4) > span  {
-	width: 20px;
-	height: 20px;
-	content: url('../../assets/navigate_next_black_24dp.svg');
-	cursor: pointer;
-}
-
 /**
  * Pagination extended
  */
 
 .pagination.variant--extended  {
-	display: flex;
-	align-items: center;
-	
-	font-family: var(--font-family-02);
-	font-size: var(--font-size-tiny);
-	line-height: var(--line-height-medium);
 	color: var(--surface-color-03);
-}
-
-.pagination.variant--extended > div:nth-child(1) > span {
-	width: 20px;
-	height: 20px;
-	content: url('../../assets/navigate_before_black_24dp.svg');
-	cursor: pointer;
-}
-
-.pagination.variant--extended > div:nth-child(2) {
-	display: flex;
-	align-items: center;
-	margin-left: 15px; /* FIXME: Espaçamento inexistente no DS */
-	margin-right: 15px; /* FIXME: Espaçamento inexistente no DS */
-	gap: var(--spacing-zee); /* 36px - 16px*2 = 4px */
-	/* 36 de um numero ate outro, -16 de padding de cada bolinha */
-}
-
-.pagination.variant--extended > div:nth-child(2) > div {
-	width: 56px;
-	height: 56px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	border-radius: 9999px;
 }
 
 .pagination.variant--extended > div:nth-child(2) 
 	> div:not(.horiz):not(.active):hover {
 		background-color: var(--surface-color-10);
-		cursor: pointer;
 }
 
 .pagination.variant--extended > div:nth-child(2) > div.active {
@@ -191,45 +125,10 @@
 	background-color: var(--color-secundary-06);
 }
 
-.pagination.variant--extended > div:nth-child(2) 
-	> div.horiz > span {
-		width: 20px;
-		content: url('../../assets/more_horiz_black_24dp.svg');
-}
-
-.pagination.variant--extended > div:nth-child(3) > span {
-	width: 20px;
-	height: 20px;
-	content: url('../../assets/navigate_next_black_24dp.svg');
-	cursor: pointer;
-}
-
 .pagination.variant--extended > div:nth-child(4) {
-	display: flex;
-	align-items: center;
-	margin-left: 15px; /* FIXME: Espaçamento inexistente no DS */
-	padding-top: var(--spacing-tiny);
-	padding-right: var(--spacing-xxsm);
-	padding-bottom: var(--spacing-tiny);
-	padding-left: var(--spacing-xxsm);
 	background-color: var(--surface-color-10);
-	border-radius: 4px;
-	gap: var(--spacing-zee);
 }
 
 .pagination.variant--extended > div:nth-child(4) > input {
-	all: unset;
-	width: 46px; /* FIXME: Um dígito ocupa 9px e 4 dígitos pode ser suficiente (36px) */
-	height: 24px;
-	font-family: var(--font-family-02);
-	font-size: var(--font-size-weeny);
-	line-height: var(--line-height-medium);
 	color: var(--surface-color-05);
-}
-
-.pagination.variant--extended > div:nth-child(4) > span {
-	width: 20px;
-	height: 20px;
-	content: url('../../assets/navigate_next_black_24dp.svg');
-	cursor: pointer;
 }

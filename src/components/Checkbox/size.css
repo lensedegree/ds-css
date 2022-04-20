@@ -1,9 +1,9 @@
-.size--medium {
+.checkbox {
 	font-size: var(--font-size-weeny);
 	line-height: var(--line-height-medium);
 }
 
-.size--small {
+.checkbox.size--small {
 	font-size: var(--font-size-mini);
 	line-height: var(--line-height-medium);
 }

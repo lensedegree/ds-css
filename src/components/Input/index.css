@@ -30,6 +30,10 @@
 	cursor: not-allowed;
 }
 
+.input.disable > input {
+	color: var(--surface-color-07);
+}
+
 .input.error {
 	border: 1px solid var(--color-secundary-03);
 	border-width: 1px;
@@ -49,8 +53,4 @@
 	font-size: var(--font-size-weeny);
 	line-height: var(--line-height-medium);
 	color: var(--surface-color-05);
-}
-
-.input.disable > input {
-	color: var(--surface-color-07);
 }

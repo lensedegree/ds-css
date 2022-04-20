@@ -1,16 +1,4 @@
-.button.size--large {
-	padding-top: var(--spacing-tiny);
-	padding-bottom: var(--spacing-xxxsm);
-	padding-left: var(--spacing-md);
-	padding-right: var(--spacing-md);
-
-	font-size: var(--font-size-tiny);
-	line-height: var(--line-height-medium);
-
-	font-family: var(--font-family-02);
-}
-
-.button.size--medium {
+.button {
 	padding-top: var(--spacing-tiny);
 	padding-bottom: var(--spacing-xxxsm);
 	padding-left: var(--spacing-md);
@@ -23,13 +11,12 @@
 }
 
 .button.size--small {
-	padding-top: 2px;
+	padding-top: 2px; /* FIXME */
 	padding-bottom: var(--spacing-zee);
 	padding-left: var(--spacing-sm);
 	padding-right: var(--spacing-sm);
+}
 
-	font-size: var(--font-size-weeny);
-	line-height: var(--line-height-medium);
-
-	font-family: var(--font-family-02);
+.button.size--large {
+	font-size: var(--font-size-tiny);
 }

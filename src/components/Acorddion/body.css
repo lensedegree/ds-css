@@ -1,22 +1,11 @@
-.acorddion-body {
+.acorddion .acorddion-body {
+	display: none;
+}
+
+.acorddion.active .acorddion-body {
+	display: inherit;
 	font-size: var(--font-size-weeny);
 	line-height: var(--line-height-medium);
 	font-family: var(--font-family-02);
 	color: var(--surface-color-06);
-}
-
-.acorddion .acorddion-body.size--tiny {
-	padding: var(--spacing-xxxsm);
-}
-
-.acorddion .acorddion-body.size--normal {
-	padding: var(--spacing-sm);
-}
-
-.acorddion .acorddion-body.deactive {
-	display: none;
-}
-
-.acorddion .acorddion-body.active {
-	display: inherit;
 }

@@ -1,3 +1,6 @@
+@import url('./overflow-icon.css');
+@import url('./overflow-options.css');
+
 .overflow * {
 	margin: 0;
 	padding: 0;
@@ -5,47 +8,6 @@
 	text-decoration: none;
 }
 
-.overflow.menu {
-	display: inline-flex;
-	padding-top: var(--spacing-tiny);
-	padding-right: var(--spacing-tiny);
-	padding-bottom: var(--spacing-tiny);
-	padding-left: var(--spacing-tiny);
-	background-color: var(--surface-color-10);
-}
-
-.overflow.menu:hover {
-	background-color: var(--surface-color-09);
-	cursor: pointer;
-}
-
-.overflow.menu > span:first-child {
-	width: 16px;
-	height: 16px;
-	content: url('../../assets/more_horiz_black_24dp.svg');
-}
-
-.overflow.options.deactive {
-	display: none;
-}
-
-.overflow.options.active {
-	box-shadow: 0px 3px 5px rgba(0,0,0,0.15);
-}
-
-.overflow.options option {
-	padding-top: var(--spacing-weeny);
-	padding-right: var(--spacing-xsm);
-	padding-bottom: var(--spacing-weeny);
-	padding-left: var(--spacing-xsm);
-	background-color: var(--surface-color-10);
-	font-family: var(--font-family-02);
-	font-size: var(--font-size-weeny);
-	line-height: var(--line-height-medium);
-	color: var(--surface-color-07);
-}
-
-.overflow.options option:hover {
-	background-color: var(--surface-color-09);
-	cursor: pointer; 
+.overflow a {
+	all: unset;
 }

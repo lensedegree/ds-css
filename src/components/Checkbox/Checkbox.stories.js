@@ -34,9 +34,9 @@ export default {
 export const Checkbox = ({ variant, alignment, size, theme }) => `
 	<div class="
 		checkbox
-		variant--${variant || 'basic'}
-		alignment--${alignment || 'vertical'}
-		size--${size || 'medium'}
+		variant--${variant}
+		alignment--${alignment}
+		size--${size}
 		theme--${theme}
 	">
 		<span>

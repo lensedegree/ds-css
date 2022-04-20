@@ -1,9 +1,9 @@
-.checkbox.variant--basic input[type="checkbox"] {
+.checkbox input[type="checkbox"] {
 	all: inherit;
 	content: url('../../assets/check_box_outline_blank_black_24dp.svg');
 }
 
-.checkbox.variant--basic input[type="checkbox"]:checked {
+.checkbox input[type="checkbox"]:checked {
 	content: url('../../assets/check_box_black_24dp.svg');
 }
 

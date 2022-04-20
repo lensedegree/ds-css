@@ -1,5 +1,6 @@
-@import url('./title.css');
+@import url('./head.css');
 @import url('./body.css');
+@import url('./variant.css');
 @import url('./theme.css');
 
 .acorddion * {

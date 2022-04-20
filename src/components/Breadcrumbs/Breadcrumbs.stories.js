@@ -25,7 +25,7 @@ export default {
 export const Breadcrumbs = ({ variant, theme }) => `
 	<div class="
 		breadcrumbs
-		variant--${variant || 'primary'}
+		variant--${variant}
 		theme--${theme}
 	">
 		<a>Breadcrumb 1</a>

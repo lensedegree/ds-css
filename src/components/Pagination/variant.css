@@ -13,8 +13,6 @@
 }
 
 .pagination.variant--default > div:hover {
-	background-color: var(--color-primary-01);
-	color: var(--surface-color-11);
 	cursor: pointer;
 }
 
@@ -29,7 +27,6 @@
 	font-family: var(--font-family-02);
 	font-size: var(--font-size-weeny);
 	line-height: var(--line-height-medium);
-	color: var(--surface-color-03);
 }
 
 .pagination.variant--basic > div:nth-child(1) > span  {
@@ -45,13 +42,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-color: var(--surface-color-10);
 	border-radius: 9999px;
-}
-
-.pagination.variant--basic > div:nth-child(2):focus-within {
-	background-color: var(--color-primary-01);
-	color: var(--surface-color-11);
 }
 
 .pagination.variant--basic > div:nth-child(2) > input {
@@ -78,7 +69,6 @@
 	font-family: var(--font-family-02);
 	font-size: var(--font-size-tiny);
 	line-height: var(--line-height-medium);
-	color: var(--surface-color-03);
 }
 
 .pagination.variant--extended > div:nth-child(1) > span {
@@ -108,13 +98,7 @@
 
 .pagination.variant--extended > div:nth-child(2) 
 	> div:not(.horiz):not(.active):hover {
-		background-color: var(--surface-color-10);
 		cursor: pointer;
-}
-
-.pagination.variant--extended > div:nth-child(2) > div.active {
-	background-color: var(--color-primary-01);
-	color: var(--surface-color-11);
 }
 
 .pagination.variant--extended > div:nth-child(2) 
@@ -138,7 +122,6 @@
 	padding-right: var(--spacing-xxsm);
 	padding-bottom: var(--spacing-tiny);
 	padding-left: var(--spacing-xxsm);
-	background-color: var(--surface-color-10);
 	border-radius: 4px;
 	gap: var(--spacing-zee);
 }
@@ -150,7 +133,6 @@
 	font-family: var(--font-family-02);
 	font-size: var(--font-size-weeny);
 	line-height: var(--line-height-medium);
-	color: var(--surface-color-05);
 }
 
 .pagination.variant--extended > div:nth-child(4) > span {

@@ -1,7 +1,7 @@
-.icon-shape.size--small {
-	padding: var(--spacing-weeny);
+.icon-shape {
+	padding: var(--spacing-xxxsm);
 }
 
-.icon-shape.size--medium {
-	padding: var(--spacing-xxxsm);
+.icon-shape.size--small {
+	padding: var(--spacing-weeny);
 }

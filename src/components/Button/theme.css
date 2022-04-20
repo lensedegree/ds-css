@@ -96,44 +96,77 @@
 		contrast(93%);
 }
 
-.button.variant--primary {
+.button {
 	background: var(--color-primary-01);
 	color: var(--surface-color-11);
-	border: 1px solid var(--color-primary-01);
+	border-color: var(--color-primary-01);
 }
 
 .button.variant--primary.theme--yellow-lens {
 	background: var(--color-secundary-01);
 	color: var(--surface-color-11);
-	border: 1px solid var(--color-secundary-01);
+	border-color: var(--color-secundary-01);
 }
 
 .button.variant--primary.theme--green-lens {
 	background: var(--color-secundary-02);
 	color: var(--surface-color-11);
-	border: 1px solid var(--color-secundary-02);
+	border-color: var(--color-secundary-02);
 }
 
 .button.variant--primary.theme--red-lens {
 	background: var(--color-secundary-03);
 	color: var(--surface-color-11);
-	border: 1px solid var(--color-secundary-03);
+	border-color: var(--color-secundary-03);
 }
 
 .button.variant--primary.theme--purple-lens {
 	background: var(--color-secundary-04);
 	color: var(--surface-color-11);
-	border: 1px solid var(--color-secundary-04);
+	border-color: var(--color-secundary-04);
 }
 
 .button.variant--primary.theme--orange-lens {
 	background: var(--color-secundary-05);
 	color: var(--surface-color-11);
-	border: 1px solid var(--color-secundary-05);
+	border-color: var(--color-secundary-05);
 }
 
 .button.variant--primary.theme--lime-lens {
 	background: var(--color-secundary-06);
 	color: var(--surface-color-11);
-	border: 1px solid var(--color-secundary-06);
+	border-color: var(--color-secundary-06);
+}
+
+.button.variant--secundary {
+	background: var(--surface-color-00);
+	color: var(--surface-color-11);
+	border-color: var(--surface-color-00);
+}
+.button.variant--secundary.invert {
+	background: var(--surface-color-11);
+	color: var(--surface-color-00);
+	border-color: var(--surface-color-11);
+}
+
+.button.variant--tertiary {
+	background: var(--surface-color-11);
+	color: var(--surface-color-02);
+	border-color: var(--surface-color-02);
+}
+.button.variant--tertiary:hover {
+	background: var(--surface-color-02);
+	color: var(--surface-color-11);
+}
+
+.button.variant--danger {
+	background: var(--color-secundary-03);
+	color: var(--surface-color-11);
+	border-color: var(--color-secundary-03);
+}
+
+.button.variant--disable {
+	background: var(--surface-color-09);
+	color: var(--surface-color-07);
+	border-color: var(--surface-color-09);
 }

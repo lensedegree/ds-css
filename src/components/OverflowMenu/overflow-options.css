@@ -1,0 +1,25 @@
+.overflow .overflow-options {
+	display: none;
+}
+
+.overflow.active .overflow-options {
+	display: inherit;
+	box-shadow: 0px 3px 5px rgba(0,0,0,0.15);
+}
+
+.overflow .overflow-options option {
+	padding-top: var(--spacing-weeny);
+	padding-right: var(--spacing-xsm);
+	padding-bottom: var(--spacing-weeny);
+	padding-left: var(--spacing-xsm);
+	background-color: var(--surface-color-10);
+	font-family: var(--font-family-02);
+	font-size: var(--font-size-weeny);
+	line-height: var(--line-height-medium);
+	color: var(--surface-color-07);
+}
+
+.overflow .overflow-options option:hover {
+	background-color: var(--surface-color-09);
+	cursor: pointer; 
+}

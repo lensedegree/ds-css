@@ -33,9 +33,9 @@ export default {
 export const IconShape = ({ shape, size, variant, theme }) => `
 	<div class="
 		icon-shape
-		shape--${shape || 'square'}
-		size--${size || 'medium'}
-		variant--${variant || 'filled'}
+		shape--${shape}
+		size--${size}
+		variant--${variant}
 		theme--${theme}
 	">
 		<span class="material-icons-outlined md-20">

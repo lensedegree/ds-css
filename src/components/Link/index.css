@@ -2,6 +2,9 @@
 @import url('./size.css');
 @import url('./theme.css');
 
+/* FIXME: Se o link receber um filho ancor ele não sobrepoe a estilização
+do mesmo. */
+
 .link * {
 	margin: 0;
 	padding: 0;

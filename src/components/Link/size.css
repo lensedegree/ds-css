@@ -1,14 +1,12 @@
-.link.size--small {
-	font-size: var(--font-size-zee);
-	line-height: var(--line-height-medium);
-}
-
-.link.size--medium {
+.link {
 	font-size: var(--font-size-weeny);
 	line-height: var(--line-height-medium);
 }
 
+.link.size--small {
+	font-size: var(--font-size-zee);
+}
+
 .link.size--large {
 	font-size: var(--font-size-tiny);
-	line-height: var(--line-height-medium);
 }

@@ -53,7 +53,7 @@ export const BasicInput = ({
 }) => `
 	<div class="
 		input
-		variant--${variant || 'text'}
+		variant--${variant}
 		${disable ? 'disable' : ''}
 		${error ? 'error' : ''}
 		theme--${theme}

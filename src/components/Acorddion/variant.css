@@ -1,0 +1,21 @@
+.acorddion .acorddion-head {
+	padding-top: var(--spacing-xxsm);
+	padding-right: var(--spacing-sm);
+	padding-bottom: var(--spacing-xxsm);
+	padding-left: var(--spacing-sm);
+}
+
+.acorddion.variant--tiny .acorddion-head {
+	padding-top: var(--spacing-xxxsm);
+	padding-right: var(--spacing-xxsm);
+	padding-bottom: var(--spacing-xxxsm);
+	padding-left: var(--spacing-xxsm);
+}
+
+.acorddion .acorddion-body {
+	padding: var(--spacing-sm);
+}
+
+.acorddion.variant--tiny .acorddion-body {
+	padding: var(--spacing-xxxsm);
+}

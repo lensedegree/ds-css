@@ -50,8 +50,8 @@ export const Button = ({ variant, size, icon, content, theme }) => {
     return `
       <button class="
         button
-        variant--${variant ?? 'primary'}
-        size--${size ?? 'large'}
+        variant--${variant}
+        size--${size}
         theme--${theme}
       ">
         ${content || 'Button'}
@@ -70,8 +70,8 @@ export const Button = ({ variant, size, icon, content, theme }) => {
   return `
     <button class="
       button
-      variant--${variant ?? 'primary'}
-      size--${size ?? 'large'}
+      variant--${variant}
+      size--${size}
       theme--${theme}
     ">${content || 'Button'}</button>
   `

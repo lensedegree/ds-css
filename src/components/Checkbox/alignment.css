@@ -1,10 +1,11 @@
-.alignment--vertical {
+.checkbox {
 	display: flex;
 	flex-direction: column;
 	gap: var(--spacing-mini);
 }
 
-.alignment--horizontal {
+.checkbox.alignment--horizontal {
 	display: flex;
+	flex-direction: row;
 	gap: 18px; /* FIXME: Espaçamento inexistente no DS */
 }

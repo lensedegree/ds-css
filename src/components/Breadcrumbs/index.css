@@ -1,4 +1,7 @@
+@import url('./variant.css');
 @import url('./theme.css');
+
+/* FIXME: A última migalha pode ser clicável (porém a cor se mantem cinza) */
 
 .breadcrumbs * {
 	margin: 0;
@@ -31,22 +34,4 @@
 
 .breadcrumbs a:last-child {
 	cursor: inherit;
-}
-
-.breadcrumbs.variant--primary a + span::before {
-	content: '/';
-	color: var(--surface-color-07);
-}
-
-.breadcrumbs.variant--secundary a + span {
-	width: 12px;
-	height: 12px;
-	content: url('../../assets/navigate_next_black_24dp.svg');
-	filter: /* --surface-color-07 => #959595 */
-		invert(63%) 
-		sepia(1%) 
-		saturate(0%) 
-		hue-rotate(9deg) 
-		brightness(94%) 
-		contrast(86%); 
 }

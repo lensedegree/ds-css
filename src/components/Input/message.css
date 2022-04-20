@@ -1,8 +1,9 @@
-.input + .input-message.deactive {
+.input + .input-message {
 	display: none;
 }
 
 .input + .input-message.active {
+	display: initial;
 	margin-top: var(--spacing-mini);
 	font-family: var(--font-family-02);
 	font-size: var(--font-size-weeny);

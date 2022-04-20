@@ -28,20 +28,12 @@ export default {
 			control: { type: 'select' }
 		}
   },
-	// decorators: [(story) => `
-  //   <div style="
-	// 		width: 355px;
-  //   ">
-  //     ${story()}
-  //   </div>
-  // `],
 }
 
 export const Modal = ({ variant, format, acceptText, theme }) => `
 	<div class="
 		modal
-		variant--${variant || 'confirmation'}
-		format--${format || 'desktop'}
+		format--${format}
 	">
 		<span>
 			<span>
@@ -56,7 +48,6 @@ export const Modal = ({ variant, format, acceptText, theme }) => `
 			<button class="
 				button
 				variant--${variant === 'alert' ? 'danger' : 'primary'}
-				size--medium
         theme--${theme}
 			">
 				${acceptText || 'Mesclar'}
@@ -65,7 +56,6 @@ export const Modal = ({ variant, format, acceptText, theme }) => `
 			<button class="
 				button
 				variant--tertiary
-				size--medium
 			">
 				Cancelar
 			</button>
